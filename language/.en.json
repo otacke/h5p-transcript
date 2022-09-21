@@ -1,0 +1,88 @@
+{
+  "semantics": [
+    {
+      "label": "Medium",
+      "fields": [
+        {
+          "label": "Medium"
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Transcript (WebVTT file)"
+    },
+    {
+      "label": "Behavioural settings",
+      "fields": [
+        {
+          "label": "Maximum number of lines",
+          "description": "Maximum number of transcript lines that should be displayed at once. If left out or 0, will display complete transcript."
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "No medium provided",
+          "default": "No medium was assigned to the transcript."
+        },
+        {
+          "label": "No transcript provided",
+          "default": "No transcript was provided."
+        },
+        {
+          "label": "Problem with WebVTT file",
+          "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information."
+        }
+      ]
+    },
+    {
+      "label": "Readspeaker",
+      "fields": [
+        {
+          "label": "Transcript visible",
+          "default": "Hide transcript. Currently visible."
+        },
+        {
+          "label": "Transcript invisible",
+          "default": "Show transcript. Currently not visible."
+        },
+        {
+          "label": "Autoscroll active",
+          "default": "Turn off autoscroll. Currently active."
+        },
+        {
+          "label": "Autoscroll inactive",
+          "default": "Turn on autoscroll. Currently not active."
+        },
+        {
+          "label": "Autoscroll disabled",
+          "default": "Autoscroll option disabled."
+        },
+        {
+          "label": "Interactive transcript view",
+          "default": "Switch to plaintext view"
+        },
+        {
+          "label": "Plain text view",
+          "default": "Switch to interactive transcript view."
+        },
+        {
+          "label": "Mode switching disabled",
+          "default": "Mode switching disabled."
+        },
+        {
+          "label": "Interactive transcript",
+          "default": "Interactive transcript"
+        }
+      ]
+    }
+  ]
+}
