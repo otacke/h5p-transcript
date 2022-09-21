@@ -38,8 +38,8 @@
         "name": "maxLines",
         "type": "number",
         "label": "Maximum number of lines",
-        "description": "Maximum number of transcript lines that should be displayed at once. If left out, will display complete transcript.",
-        "min": 3,
+        "description": "Maximum number of transcript lines that should be displayed at once. If left out or 0, will display complete transcript.",
+        "min": 0,
         "default": 10,
         "optional": true
       },
