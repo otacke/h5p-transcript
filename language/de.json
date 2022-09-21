@@ -1,0 +1,80 @@
+{
+  "semantics": [
+    {
+      "label": "Medium",
+      "fields": [
+        {
+          "label": "Medium"
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Transkript (WebVTT-Datei)"
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "fields": [
+        {
+          "label": "Maximale Anzahl Zeilen",
+          "description": "Maximale Anzahl an Zeilen des Transkripts, die zur selben Zeit angezeigt werden sollen. Wenn nichts gesetzt wird, wird das gesamte Transkript angezeigt."
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Bezeichnungen und Beschriftungen",
+      "fields": [
+        {
+          "label": "Kein Medium bereitgestellt",
+          "default": "Dem Transkript wurde kein Medium zugewiesen."
+        },
+        {
+          "label": "Kein Transkript bereitgestellt",
+          "default": "Es wurde kein Transkript bereitgestellt."
+        },
+        {
+          "label": "Problem mit WebVTT-Datei",
+          "default": "Es scheint etwas mit der WebVTT-Datei nicht in Ordnung zu sein. Bitte prüfe die Ausgabe der Entwicklungskonsole des Brosers für nähere Informationen."
+        }
+      ]
+    },
+    {
+      "label": "Vorlesewerkzeug",
+      "fields": [
+        {
+          "label": "Transkript sichtbar",
+          "default": "Blende Transkript aus. Derzeit sichtbar."
+        },
+        {
+          "label": "Transkript nicht sichtbar",
+          "default": "Blende Transkript ein. Derzeit nicht sichtbar."
+        },
+        {
+          "label": "Automatisches Scrollen aktiv",
+          "default": "Schalte automatisches Scrollen aus. Derzeit aktiv."
+        },
+        {
+          "label": "Automatisches Scrollen inaktiv",
+          "default": "Schalte automatisches Scrollen ein. Derzeit inaktiv."
+        },
+        {
+          "label": "Ansicht: Interaktives Transkript",
+          "default": "Schalte in die Ansicht mit einfachem Text."
+        },
+        {
+          "label": "Ansicht: einfacher Text",
+          "default": "Schalte in die Ansicht mit interaktivem Transkript."
+        },
+        {
+          "label": "Interaktives Transkript",
+          "default": "Interaktives Transkript"
+        }
+      ]
+    }
+  ]
+}

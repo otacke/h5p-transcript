@@ -1,0 +1,168 @@
+[
+  {
+    "name": "mediumGroup",
+    "label": "Medium",
+    "type": "group",
+    "importance": "high",
+    "expanded": true,
+    "fields": [
+      {
+        "name": "medium",
+        "type": "library",
+        "label": "Medium",
+        "options": [
+          "H5P.Audio 1.5",
+          "H5P.InteractiveVideo 1.24",
+          "H5P.Video 1.6"
+        ]
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "widget": "none",
+        "label": "Dummy"
+      }
+    ]
+  },
+  {
+    "name": "transcriptFile",
+    "type": "file",
+    "label": "Transcript (WebVTT file)"
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Behavioural settings",
+    "fields": [
+      {
+        "name": "maxLines",
+        "type": "number",
+        "label": "Maximum number of lines",
+        "description": "Maximum number of transcript lines that should be displayed at once. If left out, will display complete transcript.",
+        "min": 3,
+        "default": 10,
+        "optional": true
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "widget": "none",
+        "label": "Dummy"
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "User interface",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "noMedium",
+        "type": "text",
+        "label": "No medium provided",
+        "importance": "low",
+        "default": "No medium was assigned to the transcript.",
+        "optional": true
+      },
+      {
+        "name": "noTranscript",
+        "type": "text",
+        "label": "No transcript provided",
+        "importance": "low",
+        "default": "No transcript was provided.",
+        "optional": true
+      },
+      {
+        "name": "troubleWebVTT",
+        "type": "text",
+        "label": "Problem with WebVTT file",
+        "importance": "low",
+        "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information.",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "common": true,
+    "label": "Readspeaker",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "buttonVisible",
+        "type": "text",
+        "label": "Transcript visible",
+        "importance": "low",
+        "default": "Hide transcript. Currently visible.",
+        "optional": true
+      },
+      {
+        "name": "buttonInvisible",
+        "type": "text",
+        "label": "Transcript invisible",
+        "importance": "low",
+        "default": "Show transcript. Currently not visible.",
+        "optional": true
+      },
+      {
+        "name": "buttonAutoscrollActive",
+        "type": "text",
+        "label": "Autoscroll active",
+        "importance": "low",
+        "default": "Turn off autoscroll. Currently active.",
+        "optional": true
+      },
+      {
+        "name": "buttonAutoscrollInactive",
+        "type": "text",
+        "label": "Autoscroll inactive",
+        "importance": "low",
+        "default": "Turn on autoscroll. Currently not active.",
+        "optional": true
+      },
+      {
+        "name": "buttonAutoscrollDisabled",
+        "type": "text",
+        "label": "Autoscroll disabled",
+        "importance": "low",
+        "default": "Autoscroll option disabled.",
+        "optional": true
+      },
+      {
+        "name": "buttonInteractive",
+        "type": "text",
+        "label": "Interactive transcript view",
+        "importance": "low",
+        "default": "Switch to plaintext view",
+        "optional": true
+      },
+      {
+        "name": "buttonPlaintext",
+        "type": "text",
+        "label": "Plain text view",
+        "importance": "low",
+        "default": "Switch to interactive transcript view.",
+        "optional": true
+      },
+      {
+        "name": "buttonModeDisabled",
+        "type": "text",
+        "label": "Mode switching disabled",
+        "importance": "low",
+        "default": "Mode switching disabled.",
+        "optional": true
+      },
+      {
+        "name": "interactiveTranscript",
+        "type": "text",
+        "label": "Interactive transcript",
+        "importance": "low",
+        "default": "Interactive transcript",
+        "optional": true
+      }
+    ]
+  }
+]
