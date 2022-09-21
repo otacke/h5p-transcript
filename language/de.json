@@ -19,7 +19,7 @@
       "fields": [
         {
           "label": "Maximale Anzahl Zeilen",
-          "description": "Maximale Anzahl an Zeilen des Transkripts, die zur selben Zeit angezeigt werden sollen. Wenn nichts gesetzt wird, wird das gesamte Transkript angezeigt."
+          "description": "Maximale Anzahl an Zeilen des Transkripts, die zur selben Zeit angezeigt werden sollen. Wenn nichts oder 0 gesetzt wird, wird das gesamte Transkript angezeigt."
         },
         {
           "label": "Dummy"
