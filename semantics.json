@@ -194,6 +194,14 @@
         "importance": "low",
         "default": "Enter a query to highlight relevant text.",
         "optional": true
+      },
+      {
+        "name": "searchboxDisabled",
+        "type": "text",
+        "label": "Search box disabled",
+        "importance": "low",
+        "default": "Search box disabled.",
+        "optional": true
       }
     ]
   }

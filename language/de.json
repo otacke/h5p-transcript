@@ -97,6 +97,10 @@
         {
           "label": "Eingeben zum Markieren",
           "default": "Gibt einen Suchbegriff ein, um entsprechenden Text zu markieren."
+        },
+        {
+          "label": "Suchfeld deaktiviert",
+          "default": "Suchfeld deaktiviert."
         }
       ]
     }
