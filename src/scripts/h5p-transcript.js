@@ -36,7 +36,8 @@ export default class Transcript extends H5P.EventDispatcher {
         buttonTimeActive: 'Hide start time. Currently shown.',
         buttonTimeInactive: 'Show start time. Currently not shown.',
         buttonTimeDisabled: 'Start time option disabled.',
-        interactiveTranscript: 'Interactive transcript'
+        interactiveTranscript: 'Interactive transcript',
+        enterToHighlight: 'Enter a query to highlight relevant text.'
       }
     }, params);
 

@@ -93,6 +93,10 @@
         {
           "label": "Interactive transcript",
           "default": "Interactive transcript"
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
         }
       ]
     }

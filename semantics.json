@@ -186,6 +186,14 @@
         "importance": "low",
         "default": "Interactive transcript",
         "optional": true
+      },
+      {
+        "name": "enterToHighlight",
+        "type": "text",
+        "label": "Enter to highlight",
+        "importance": "low",
+        "default": "Enter a query to highlight relevant text.",
+        "optional": true
       }
     ]
   }
