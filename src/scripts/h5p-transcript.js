@@ -62,7 +62,10 @@ export default class Transcript extends H5P.EventDispatcher {
         params: {
           instance: this.medium.instance,
           transcriptFile: this.params.transcriptFile,
-          behaviour: { maxLines: this.params.behaviour.maxLines },
+          behaviour: {
+            maxLines: this.params.behaviour.maxLines,
+            buttons: ['visibility', 'plaintext', 'autoscroll']
+          },
           l10n: this.params.l10n,
           a11y: this.params.a11y
         }
