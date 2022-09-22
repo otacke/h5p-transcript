@@ -452,10 +452,6 @@ export default class Transcript extends H5P.EventDispatcher {
    */
   getxAPIDefinition() {
     const definition = {};
-
-    // TODO: Check
-    // TODO: Track IV progress and emit once completed
-
     definition.name = {};
     definition.name[this.languageTag] = this.getTitle();
     // Fallback for h5p-php-reporting, expects en-US
