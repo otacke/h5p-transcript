@@ -25,10 +25,17 @@ export default class Transcript extends H5P.EventDispatcher {
         troubleWebVTT: 'There seems to be something wrong with the WebVTT file. Please consult the browser\'s development console for more information.'
       },
       a11y: {
+        buttonVisible: 'Hide transcript. Currently visible.',
+        buttonInvisible: 'Show transcript. Currently not visible.',
         buttonAutoscrollActive: 'Turn off autoscroll. Currently active.',
         buttonAutoscrollInactive: 'Turn on autoscroll. Currently not active.',
+        buttonAutoscrollDisabled: 'Autoscroll option disabled.',
         buttonInteractive: 'Switch to plaintext view',
         buttonPlaintext: 'Switch to interactive transcript view',
+        buttonModeDisabled: 'Mode switching disabled.',
+        buttonTimeActive: 'Hide start time. Currently shown.',
+        buttonTimeInactive: 'Show start time. Currently not shown.',
+        buttonTimeDisabled: 'Start time option disabled.',
         interactiveTranscript: 'Interactive transcript'
       }
     }, params);

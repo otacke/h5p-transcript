@@ -63,12 +63,32 @@
           "default": "Schalte automatisches Scrollen ein. Derzeit inaktiv."
         },
         {
+          "label": "Automatisches Scrollen deaktiviert",
+          "default": "Automatisches Scrollen deaktiviert."
+        },
+        {
           "label": "Ansicht: Interaktives Transkript",
           "default": "Schalte in die Ansicht mit einfachem Text."
         },
         {
           "label": "Ansicht: einfacher Text",
           "default": "Schalte in die Ansicht mit interaktivem Transkript."
+        },
+        {
+          "label": "Ändern der Ansicht deaktiviert",
+          "default": "Ändern der Ansicht deaktiviert."
+        },
+        {
+          "label": "Startzeit angezeigt",
+          "default": "Blende Startzeit aus. Derzeit angegezeigt."
+        },
+        {
+          "label": "Startzeit nicht angezeigt",
+          "default": "Blende Startzeit ein. Derzeit nicht angezeigt."
+        },
+        {
+          "label": "Startzeit ändern deaktiviert",
+          "default": "Startzeitoption deaktiviert."
         },
         {
           "label": "Interaktives Transkript",

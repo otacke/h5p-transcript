@@ -79,6 +79,18 @@
           "default": "Mode switching disabled."
         },
         {
+          "label": "Start time active",
+          "default": "Hide start time. Currently shown."
+        },
+        {
+          "label": "Start time inactive",
+          "default": "Show start time. Currently not shown."
+        },
+        {
+          "label": "Start time disabled",
+          "default": "Start time option disabled."
+        },
+        {
           "label": "Interactive transcript",
           "default": "Interactive transcript"
         }

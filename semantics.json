@@ -156,6 +156,30 @@
         "optional": true
       },
       {
+        "name": "buttonTimeActive",
+        "type": "text",
+        "label": "Start time active",
+        "importance": "low",
+        "default": "Hide start time. Currently shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonTimeInactive",
+        "type": "text",
+        "label": "Start time inactive",
+        "importance": "low",
+        "default": "Show start time. Currently not shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonTimeDisabled",
+        "type": "text",
+        "label": "Start time disabled",
+        "importance": "low",
+        "default": "Start time option disabled.",
+        "optional": true
+      },
+      {
         "name": "interactiveTranscript",
         "type": "text",
         "label": "Interactive transcript",
