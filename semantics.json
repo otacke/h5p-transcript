@@ -180,6 +180,30 @@
         "optional": true
       },
       {
+        "name": "buttonLineBreakActive",
+        "type": "text",
+        "label": "Line breaks active",
+        "importance": "low",
+        "default": "Hide line breaks. Currently shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonLineBreakInactive",
+        "type": "text",
+        "label": "Line breaks inactive",
+        "importance": "low",
+        "default": "Show line breaks. Currently not shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonLineBreakDisabled",
+        "type": "text",
+        "label": "Line breaks disabled",
+        "importance": "low",
+        "default": "Line break option disabled.",
+        "optional": true
+      },
+      {
         "name": "interactiveTranscript",
         "type": "text",
         "label": "Interactive transcript",

@@ -36,6 +36,9 @@ export default class Transcript extends H5P.EventDispatcher {
         buttonTimeActive: 'Hide start time. Currently shown.',
         buttonTimeInactive: 'Show start time. Currently not shown.',
         buttonTimeDisabled: 'Start time option disabled.',
+        buttonLineBreakActive: 'Hide line breaks. Currently shown.',
+        buttonLineBreakInactive: 'Show line breaks. Currently not shown.',
+        buttonLineBreakDisabled: 'Line break option disabled.',
         interactiveTranscript: 'Interactive transcript',
         enterToHighlight: 'Enter a query to highlight relevant text.',
         searchboxDisabled: 'Search box disabled.'
@@ -66,7 +69,7 @@ export default class Transcript extends H5P.EventDispatcher {
           transcriptFile: this.params.transcriptFile,
           behaviour: {
             maxLines: this.params.behaviour.maxLines,
-            buttons: ['visibility', 'plaintext', 'autoscroll']
+            buttons: ['visibility', 'plaintext', 'linebreak', 'autoscroll']
           },
           l10n: this.params.l10n,
           a11y: this.params.a11y

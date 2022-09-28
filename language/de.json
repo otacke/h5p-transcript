@@ -91,6 +91,18 @@
           "default": "Startzeitoption deaktiviert."
         },
         {
+          "label": "Line breaks active",
+          "default": "Hide line breaks. Currently shown."
+        },
+        {
+          "label": "Line breaks inactive",
+          "default": "Show line breaks. Currently not shown."
+        },
+        {
+          "label": "Line breaks disabled",
+          "default": "Line break option disabled."
+        },
+        {
           "label": "Interaktives Transkript",
           "default": "Interaktives Transkript"
         },
