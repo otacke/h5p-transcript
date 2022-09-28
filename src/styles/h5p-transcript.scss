@@ -1,3 +1,9 @@
 .h5p-transcript {
   width: 100%;
+
+  .h5p-transcript-medium {
+    &.h5p-audio-wrapper {
+      margin: 1em;
+    }
+  }
 }
