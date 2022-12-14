@@ -1,0 +1,120 @@
+{
+  "semantics": [
+    {
+      "label": "Medio",
+      "fields": [
+        {
+          "label": "Medio"
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Transcrición (ficheiro WebVTT)"
+    },
+    {
+      "label": "Configuración do comportamento",
+      "fields": [
+        {
+          "label": "Número máximo de liñas",
+          "description": "Número máximo de liñas de transcrición que deben amosarse á vez. Se se omite ou ten valor 0, amosará a transcrición completa."
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Interface de usuario",
+      "fields": [
+        {
+          "label": "Non se proporcionou ningún medio",
+          "default": "Non se asignou ningún medio á transcrición."
+        },
+        {
+          "label": "Non se proporcionou ningunha transcrición",
+          "default": "Non se proporcionou ningunha transcrición."
+        },
+        {
+          "label": "Problema co ficheiro WebVTT",
+          "default": "Parece que hai algo mal co ficheiro WebVTT. Consulte a consola de desenvolvemento do navegador para obter máis información."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "label": "Transcrición visible",
+          "default": "Ocultar a transcrición. Visible actualmente."
+        },
+        {
+          "label": "Transcrición invisible",
+          "default": "Mostrar a transcrición. Non visible actualmente."
+        },
+        {
+          "label": "Desprazamento automático activo",
+          "default": "Desactiva o desprazamento automático. Actualmente activo."
+        },
+        {
+          "label": "Desprazamento automático inactivo",
+          "default": "Activa o desprazamento automático. Actualmente non activo."
+        },
+        {
+          "label": "Desactivado o desprazamento automático",
+          "default": "Opción de desprazamento automático desactivada."
+        },
+        {
+          "label": "Vista de transcrición interactiva",
+          "default": "Cambia á vista de texto sen formato"
+        },
+        {
+          "label": "Vista de texto sen formato",
+          "default": "Cambia á vista de transcrición interactiva."
+        },
+        {
+          "label": "Cambio de modo desactivado",
+          "default": "Cambio de modo desactivado."
+        },
+        {
+          "label": "Hora de inicio activa",
+          "default": "Ocultar a hora de inicio. Actualmente visible."
+        },
+        {
+          "label": "Hora de inicio inactiva",
+          "default": "Amosar a hora de inicio. Non amosada actualmente."
+        },
+        {
+          "label": "Hora de inicio desactivada",
+          "default": "A opción de hora de inicio está desactivada."
+        },
+        {
+          "label": "Saltos de liña activos",
+          "default": "Ocultar saltos de liña. Actualmente amosados."
+        },
+        {
+          "label": "Saltos de liña inactivos",
+          "default": "Amosar saltos de liña. Non amosados actualmente."
+        },
+        {
+          "label": "Saltos de liña desactivados",
+          "default": "Opción de salto de liña desactivada."
+        },
+        {
+          "label": "Transcrición interactiva",
+          "default": "Transcrición interactiva"
+        },
+        {
+          "label": "Introducir para resaltar",
+          "default": "Introduza unha consulta para resaltar o texto relevante."
+        },
+        {
+          "label": "Caixa de busca desactivada",
+          "default": "Caixa de busca desactivada."
+        }
+      ],
+      "label": "Lector de pantalla"
+    }
+  ]
+}
