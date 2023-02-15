@@ -15,7 +15,7 @@
       "label": "Transcripción (archivo WebVTT)"
     },
     {
-      "label": "Configuración del comportamiento",
+      "label": "Configuraciones del comportamiento",
       "fields": [
         {
           "label": "Número máximo de líneas",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "label": "Interfaz de usuario",
+      "label": "Interfaz del usuario",
       "fields": [
         {
           "label": "No se proporciona ningún medio",
@@ -50,7 +50,7 @@
           "default": "Ocultar transcripción. Actualmente visible."
         },
         {
-          "label": "Transcripción visible",
+          "label": "Transcripción invisible",
           "default": "Mostrar transcripción. Actualmente no visible."
         },
         {

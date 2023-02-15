@@ -107,7 +107,7 @@
           "default": "Transcripción interactiva"
         },
         {
-          "label": "Entrar para resaltar",
+          "label": "Escribir para resaltar",
           "default": "Escribir una consulta para resaltar el texto relevante."
         },
         {
