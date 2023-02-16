@@ -68,7 +68,7 @@
         },
         {
           "label": "Ansicht: Interaktives Transkript",
-          "default": "Schalte in die Ansicht mit einfachem Text."
+          "default": "Schalte in die Ansicht mit einfachem Text"
         },
         {
           "label": "Ansicht: einfacher Text",
@@ -91,16 +91,16 @@
           "default": "Startzeitoption deaktiviert."
         },
         {
-          "label": "Line breaks active",
-          "default": "Hide line breaks. Currently shown."
+          "label": "Zeilenumbrüche aktiv",
+          "default": "Brich Zeilen nicht um. Werden derzeit umgebrochen."
         },
         {
-          "label": "Line breaks inactive",
-          "default": "Show line breaks. Currently not shown."
+          "label": "Zeilenumbrüche inaktiv",
+          "default": "Brich Zeilen um. Werden derzeit nicht umgebrochen."
         },
         {
-          "label": "Line breaks disabled",
-          "default": "Line break option disabled."
+          "label": "Zeilenumbrüche deaktiviert",
+          "default": "Option für Zeilenumbrüche deaktiviert."
         },
         {
           "label": "Interaktives Transkript",
