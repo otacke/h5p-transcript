@@ -12,7 +12,29 @@
       ]
     },
     {
-      "label": "Transcripción (archivo WebVTT)"
+      "label": "Transcript files",
+      "entity": "transcript file",
+      "widgets": [
+        {
+          "label": "Default"
+        }
+      ],
+      "field": {
+        "label": "Transcript file data",
+        "fields": [
+          {
+            "label": "Transcripción (archivo WebVTT)"
+          },
+          {
+            "label": "Label",
+            "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+          },
+          {
+            "label": "Language code",
+            "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc."
+          }
+        ]
+      }
     },
     {
       "label": "Configuraciones del comportamiento",
@@ -44,6 +66,7 @@
       ]
     },
     {
+      "label": "Lector de pantalla",
       "fields": [
         {
           "label": "Transcripción visible",
@@ -86,8 +109,8 @@
           "default": "Mostrar hora de inicio. Actualmente no se muestra."
         },
         {
-          "default": "Opción de hora de inicio deshabilitada.",
-          "label": "Hora de inicio deshabilitada"
+          "label": "Hora de inicio deshabilitada",
+          "default": "Opción de hora de inicio deshabilitada."
         },
         {
           "label": "Saltos de línea activos",
@@ -112,9 +135,12 @@
         {
           "label": "Cuadro de búsqueda deshabilitado",
           "default": "Cuadro de búsqueda deshabilitado."
+        },
+        {
+          "label": "Unnamed option",
+          "default": "Unnamed option"
         }
-      ],
-      "label": "Lector de pantalla"
+      ]
     }
   ]
 }

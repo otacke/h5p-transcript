@@ -12,7 +12,29 @@
       ]
     },
     {
-      "label": "Transkripcija (WebVTT failas)"
+      "label": "Transcript files",
+      "entity": "transcript file",
+      "widgets": [
+        {
+          "label": "Default"
+        }
+      ],
+      "field": {
+        "label": "Transcript file data",
+        "fields": [
+          {
+            "label": "Transkripcija (WebVTT failas)"
+          },
+          {
+            "label": "Label",
+            "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+          },
+          {
+            "label": "Language code",
+            "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc."
+          }
+        ]
+      }
     },
     {
       "label": "Veikimo nustatymai",
@@ -113,6 +135,10 @@
         {
           "label": "Search box disabled",
           "default": "Search box disabled."
+        },
+        {
+          "label": "Unnamed option",
+          "default": "Unnamed option"
         }
       ]
     }

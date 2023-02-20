@@ -15,7 +15,7 @@ export default class Transcript extends H5P.EventDispatcher {
     // Sanitize parameters
     this.params = Util.extend({
       mediumGroup: { medium: {} },
-      transcriptFile: {},
+      transcriptFiles: [],
       behaviour: {
         maxLines: 10
       },
@@ -41,9 +41,27 @@ export default class Transcript extends H5P.EventDispatcher {
         buttonLineBreakDisabled: 'Line break option disabled.',
         interactiveTranscript: 'Interactive transcript',
         enterToHighlight: 'Enter a query to highlight relevant text.',
-        searchboxDisabled: 'Search box disabled.'
+        searchboxDisabled: 'Search box disabled.',
+        unnamedOption: 'Unnamed option'
       }
     }, params);
+
+    // Sanitize transcript files
+    if (!this.params.transcriptFiles.length) {
+      this.params.transcriptFiles.push(
+        {
+          transcriptFile: {}
+        }
+      );
+    }
+
+    this.params.transcriptFiles = this.params.transcriptFiles.map((file) => {
+      if (typeof file.label !== 'string') {
+        file.label = this.params.a11y.unnamedOption;
+      }
+
+      return file;
+    });
 
     this.contentId = contentId;
     this.extras = extras;
@@ -63,10 +81,10 @@ export default class Transcript extends H5P.EventDispatcher {
 
     this.transcript = this.buildTranscript({
       transcript: {
-        library: 'H5P.TranscriptLibrary 1.0', // H5P doesn't evaluate version
+        library: 'H5P.TranscriptLibrary 1.1', // H5P doesn't evaluate version
         params: {
           instance: this.medium.instance,
-          transcriptFile: this.params.transcriptFile,
+          transcriptFiles: this.params.transcriptFiles,
           behaviour: {
             maxLines: this.params.behaviour.maxLines,
             buttons: ['visibility', 'plaintext', 'linebreak', 'autoscroll']

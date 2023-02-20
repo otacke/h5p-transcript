@@ -25,9 +25,43 @@
     ]
   },
   {
-    "name": "transcriptFile",
-    "type": "file",
-    "label": "Transcript (WebVTT file)"
+    "name": "transcriptFiles",
+    "type": "list",
+    "label": "Transcript files",
+    "entity": "transcript file",
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+    "min": 1,
+    "field": {
+      "name": "transcriptFileData",
+      "type": "group",
+      "label": "Transcript file data",
+      "importance": "high",
+      "fields": [
+        {
+          "name": "transcriptFile",
+          "type": "file",
+          "label": "Transcript (WebVTT file)"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "label": "Label",
+          "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+        },
+        {
+          "name": "languageCode",
+          "type": "text",
+          "label": "Language code",
+          "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc.",
+          "optional": true
+        }
+      ]
+    }
   },
   {
     "name": "behaviour",
@@ -225,6 +259,14 @@
         "label": "Search box disabled",
         "importance": "low",
         "default": "Search box disabled.",
+        "optional": true
+      },
+      {
+        "name": "unnamedOption",
+        "type": "text",
+        "label": "Unnamed option",
+        "importance": "low",
+        "default": "Unnamed option",
         "optional": true
       }
     ]
