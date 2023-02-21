@@ -40,6 +40,8 @@ export default class Transcript extends H5P.EventDispatcher {
         buttonLineBreakInactive: 'Show line breaks. Currently not shown.',
         buttonLineBreakDisabled: 'Line break option disabled.',
         interactiveTranscript: 'Interactive transcript',
+        selectField: 'Select what transcript to display.',
+        selectFieldDisabled: 'Select field disabled.',
         enterToHighlight: 'Enter a query to highlight relevant text.',
         searchboxDisabled: 'Search box disabled.',
         unnamedOption: 'Unnamed option'

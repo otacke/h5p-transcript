@@ -254,6 +254,14 @@
         "optional": true
       },
       {
+        "name": "selectFieldDisabled",
+        "type": "text",
+        "label": "Select field disabled",
+        "importance": "low",
+        "default": "Select field disabled.",
+        "optional": true
+      },
+      {
         "name": "enterToHighlight",
         "type": "text",
         "label": "Enter to highlight",

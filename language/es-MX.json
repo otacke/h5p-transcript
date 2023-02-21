@@ -133,6 +133,10 @@
           "default": "Escribir una consulta para resaltar el texto relevante."
         },
         {
+          "label": "Select field disabled",
+          "default": "Select field disabled."
+        },
+        {
           "label": "Enter to highlight",
           "default": "Enter a query to highlight relevant text."
         },
