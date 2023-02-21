@@ -58,6 +58,7 @@
           "type": "text",
           "label": "Language code",
           "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc.",
+          "maxLength": 2,
           "optional": true
         }
       ]
