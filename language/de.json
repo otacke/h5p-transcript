@@ -133,6 +133,10 @@
           "default": "Gibt einen Suchbegriff ein, um entsprechenden Text zu markieren."
         },
         {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
           "label": "Suchfeld deaktiviert",
           "default": "Suchfeld deaktiviert."
         },

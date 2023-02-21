@@ -133,6 +133,10 @@
           "default": "Enter a query to highlight relevant text."
         },
         {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
           "label": "Search box disabled",
           "default": "Search box disabled."
         },

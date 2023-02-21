@@ -133,6 +133,10 @@
           "default": "Introduza unha consulta para resaltar o texto relevante."
         },
         {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
           "label": "Caixa de busca desactivada",
           "default": "Caixa de busca desactivada."
         },

@@ -246,6 +246,14 @@
         "optional": true
       },
       {
+        "name": "selectField",
+        "type": "text",
+        "label": "Select transcript",
+        "importance": "low",
+        "default": "Select what transcript to display.",
+        "optional": true
+      },
+      {
         "name": "enterToHighlight",
         "type": "text",
         "label": "Enter to highlight",

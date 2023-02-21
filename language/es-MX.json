@@ -133,6 +133,10 @@
           "default": "Escribir una consulta para resaltar el texto relevante."
         },
         {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
           "label": "Cuadro de búsqueda deshabilitado",
           "default": "Cuadro de búsqueda deshabilitado."
         },
