@@ -16,6 +16,7 @@ export default class Transcript extends H5P.EventDispatcher {
     this.params = Util.extend({
       mediumGroup: { medium: {} },
       transcriptFiles: [],
+      chapters: {},
       behaviour: {
         maxLines: 10
       },
