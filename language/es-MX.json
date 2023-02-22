@@ -74,6 +74,10 @@
         {
           "label": "Problema con el archivo WebVTT",
           "default": "Parece que hay algún problema con el archivo WebVTT. Consulte la consola de desarrollo del navegador para obtener más información."
+        },
+        {
+          "label": "Chapter marks",
+          "default": "Chapter marks"
         }
       ]
     },
@@ -137,6 +141,18 @@
           "default": "Opción de salto de línea deshabilitada."
         },
         {
+          "label": "Open chapter marks",
+          "default": "Open chapter marks"
+        },
+        {
+          "label": "Close chapter marks",
+          "default": "Close chapter marks"
+        },
+        {
+          "label": "Chapter marks disabled.",
+          "default": "Chapter marks disabled."
+        },
+        {
           "label": "Transcripción interactiva",
           "default": "Transcripción interactiva"
         },
@@ -159,6 +175,10 @@
         {
           "label": "Unnamed option",
           "default": "Unnamed option"
+        },
+        {
+          "label": "Close",
+          "default": "Close"
         }
       ]
     }

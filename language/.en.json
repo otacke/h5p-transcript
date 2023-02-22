@@ -74,6 +74,10 @@
         {
           "label": "Problem with WebVTT file",
           "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information."
+        },
+        {
+          "label": "Chapter marks",
+          "default": "Chapter marks"
         }
       ]
     },
@@ -137,6 +141,18 @@
           "default": "Line break option disabled."
         },
         {
+          "label": "Open chapter marks",
+          "default": "Open chapter marks"
+        },
+        {
+          "label": "Close chapter marks",
+          "default": "Close chapter marks"
+        },
+        {
+          "label": "Chapter marks disabled.",
+          "default": "Chapter marks disabled."
+        },
+        {
           "label": "Interactive transcript",
           "default": "Interactive transcript"
         },
@@ -159,6 +175,10 @@
         {
           "label": "Unnamed option",
           "default": "Unnamed option"
+        },
+        {
+          "label": "Close",
+          "default": "Close"
         }
       ]
     }

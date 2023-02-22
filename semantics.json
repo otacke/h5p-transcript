@@ -151,6 +151,14 @@
         "importance": "low",
         "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information.",
         "optional": true
+      },
+      {
+        "name": "chapterMarks",
+        "type": "text",
+        "label": "Chapter marks",
+        "importance": "low",
+        "default": "Chapter marks",
+        "optional": true
       }
     ]
   },
@@ -274,6 +282,27 @@
         "optional": true
       },
       {
+        "name": "buttonChapterMarksOpen",
+        "type": "text",
+        "label": "Open chapter marks",
+        "importance": "low",
+        "default": "Open chapter marks"
+      },
+      {
+        "name": "buttonChapterMarksClose",
+        "type": "text",
+        "label": "Close chapter marks",
+        "importance": "low",
+        "default": "Close chapter marks"
+      },
+      {
+        "name": "buttonChapterMarksDisabled",
+        "type": "text",
+        "label": "Chapter marks disabled.",
+        "importance": "low",
+        "default": "Chapter marks disabled."
+      },
+      {
         "name": "interactiveTranscript",
         "type": "text",
         "label": "Interactive transcript",
@@ -319,6 +348,14 @@
         "label": "Unnamed option",
         "importance": "low",
         "default": "Unnamed option",
+        "optional": true
+      },
+      {
+        "name": "close",
+        "type": "text",
+        "label": "Close",
+        "importance": "low",
+        "default": "Close",
         "optional": true
       }
     ]
