@@ -84,7 +84,7 @@ export default class Transcript extends H5P.EventDispatcher {
     // Turn IV bookmarks into chapter marks
     const instance = this.medium.instance;
     if (
-      this.params.chapters.useIVBookmarks &&
+      this.params.chapters?.useIVBookmarks &&
       instance?.libraryInfo.machineName === 'H5P.InteractiveVideo' &&
       instance.options.assets?.bookmarks
     ) {
