@@ -69,4 +69,33 @@ export default class Util {
 
     return languageCode;
   }
+
+  /**
+   * Convert seconds to mp4chaps timecode.
+   *
+   * @param {number} seconds The time in seconds (float for ms).
+   * @returns {string|undefined} The humanized timecode.
+   */
+  static toMP4ChapsTimecode(seconds) {
+    if (typeof seconds !== 'number' || seconds < 0) {
+      return;
+    }
+
+    const ms = Math.round(1000 * (seconds - Math.floor(seconds)));
+    seconds = Math.floor(seconds);
+
+    const hours = Math.floor(seconds / 3600);
+    seconds -= hours * 3600;
+
+    const minutes = Math.floor(seconds / 60);
+    seconds -= minutes * 60;
+
+    let timecode = '';
+    timecode += hours.toString().padStart(2, '0');
+    timecode += `:${minutes.toString().padStart(2, '0')}`;
+    timecode += `:${seconds.toString().padStart(2, '0')}`;
+    timecode += `.${ms.toString().padStart(3, '0')}`;
+
+    return timecode;
+  }
 }

@@ -49,6 +49,18 @@
       ]
     },
     {
+      "label": "Chapters",
+      "fields": [
+        {
+          "label": "Use bookmarks of Interactive Video"
+        },
+        {
+          "label": "Chapter marks",
+          "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\""
+        }
+      ]
+    },
+    {
       "label": "User interface",
       "fields": [
         {

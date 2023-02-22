@@ -81,12 +81,28 @@ export default class Transcript extends H5P.EventDispatcher {
       previousState: this.previousState.medium
     });
 
+    // Turn IV bookmarks into chapter marks
+    const instance = this.medium.instance;
+    if (
+      this.params.chapters.useIVBookmarks &&
+      instance?.libraryInfo.machineName === 'H5P.InteractiveVideo' &&
+      instance.options.assets?.bookmarks
+    ) {
+      this.params.chapters.chapterMarks = instance.options.assets.bookmarks
+        .map((bookmark) => {
+          const timecode = Util.toMP4ChapsTimecode(bookmark.time);
+          return `${timecode} ${bookmark.label}`;
+        })
+        .join('\n');
+    }
+
     this.transcript = this.buildTranscript({
       transcript: {
         library: 'H5P.TranscriptLibrary 1.1', // H5P doesn't evaluate version
         params: {
           instance: this.medium.instance,
           transcriptFiles: this.params.transcriptFiles,
+          chapterMarks: this.params.chapters.chapterMarks,
           behaviour: {
             maxLines: this.params.behaviour.maxLines,
             buttons: ['visibility', 'plaintext', 'linebreak', 'autoscroll']

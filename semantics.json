@@ -68,6 +68,7 @@
     "name": "behaviour",
     "type": "group",
     "label": "Behavioural settings",
+    "importance": "low",
     "fields": [
       {
         "name": "maxLines",
@@ -83,6 +84,40 @@
         "type": "boolean",
         "widget": "none",
         "label": "Dummy"
+      }
+    ]
+  },
+  {
+    "name": "chapters",
+    "type": "group",
+    "label": "Chapters",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "useIVBookmarks",
+        "type": "boolean",
+        "label": "Use bookmarks of Interactive Video",
+        "default": false,
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "../mediumGroup/medium",
+              "equals": [
+                "H5P.InteractiveVideo"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "chapterMarks",
+        "type": "text",
+        "label": "Chapter marks",
+        "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\"",
+        "widget": "textarea",
+        "optional": true
       }
     ]
   },
