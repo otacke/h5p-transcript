@@ -306,7 +306,7 @@
       {
         "name": "buttonChapterMarksDisabled",
         "type": "text",
-        "label": "Chapter marks disabled.",
+        "label": "Chapter marks disabled",
         "importance": "low",
         "default": "Chapter marks disabled."
       },
