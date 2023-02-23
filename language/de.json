@@ -12,26 +12,26 @@
       ]
     },
     {
-      "label": "Transcript files",
-      "entity": "transcript file",
+      "label": "Transkriptdateien",
+      "entity": "Transkriptdatei",
       "widgets": [
         {
-          "label": "Default"
+          "label": "Vorgabewert"
         }
       ],
       "field": {
-        "label": "Transcript file data",
+        "label": "Transkriptdateidaten",
         "fields": [
           {
             "label": "Transkript (WebVTT-Datei)"
           },
           {
-            "label": "Label",
-            "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+            "label": "Beschriftung",
+            "description": "Beschriftung, um das Transkript zu identifizieren. Nicht relevant, wenn es nur eine Transkriptdatei gibt."
           },
           {
-            "label": "Language code",
-            "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc."
+            "label": "Sprachcode",
+            "description": "Die Transkriptbibliothek wird versuchen, die Sprache des Transkripts automatisch für Screenreader zu ermitteln. Für den Fall, dass das nicht gelingt, kannst du händisch eine \"BCP 47-Sprachmarkierung\" setzen - z. B. \"de\" für Deutsch, \"nb\" für das norwegische bokmål, usw."
           }
         ]
       }
@@ -49,14 +49,14 @@
       ]
     },
     {
-      "label": "Chapters",
+      "label": "Kapitel",
       "fields": [
         {
-          "label": "Use bookmarks of Interactive Video"
+          "label": "Benutze die Lesezeichen von Interactive Video"
         },
         {
-          "label": "Chapter marks",
-          "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\""
+          "label": "Kapitelmarken",
+          "description": "Du kannst optional Kapitelmarken im gängigen mp4chaps-Format hinzufügen. Die Syntax lautet \"hh:mm:ss Kapiteltitel\" oder \"hh:mm:ss.MMM Kapiteltitel\""
         }
       ]
     },
@@ -76,12 +76,12 @@
           "default": "Es scheint etwas mit der WebVTT-Datei nicht in Ordnung zu sein. Bitte prüfe die Ausgabe der Entwicklungskonsole des Brosers für nähere Informationen."
         },
         {
-          "label": "Chapter marks",
-          "default": "Chapter marks"
+          "label": "Kapitelmarken",
+          "default": "Kapitelmarken"
         },
         {
-          "label": "Unnamed option",
-          "default": "Unnamed option"
+          "label": "Unbenannte Option",
+          "default": "Unbenannte Option"
         }
       ]
     },
@@ -145,16 +145,16 @@
           "default": "Option für Zeilenumbrüche deaktiviert."
         },
         {
-          "label": "Open chapter marks",
-          "default": "Open chapter marks"
+          "label": "Öffne Kapitelmarken",
+          "default": "Öffne Kapitelmarken"
         },
         {
-          "label": "Close chapter marks",
-          "default": "Close chapter marks"
+          "label": "Schließe Kapitelmarken",
+          "default": "Schließe Kapitelmarken"
         },
         {
-          "label": "Chapter marks disabled.",
-          "default": "Chapter marks disabled."
+          "label": "Kapitelmarken deaktiviert",
+          "default": "Kapitelmarken deaktiviert."
         },
         {
           "label": "Interaktives Transkript",
@@ -165,20 +165,20 @@
           "default": "Gibt einen Suchbegriff ein, um entsprechenden Text zu markieren."
         },
         {
-          "label": "Select field disabled",
-          "default": "Select field disabled."
+          "label": "Auswahlfeld deaktiviert",
+          "default": "Auswahlfeld deaktiviert."
         },
         {
-          "label": "Enter to highlight",
-          "default": "Enter a query to highlight relevant text."
+          "label": "Zum Hervorheben eingeben",
+          "default": "Gib eine Suchanfrage ein, um relevanten Text zu markieren."
         },
         {
           "label": "Suchfeld deaktiviert",
           "default": "Suchfeld deaktiviert."
         },
         {
-          "label": "Close",
-          "default": "Close"
+          "label": "Schließen",
+          "default": "Schließen"
         }
       ]
     }
