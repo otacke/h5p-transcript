@@ -78,6 +78,10 @@
         {
           "label": "Chapter marks",
           "default": "Chapter marks"
+        },
+        {
+          "label": "Unnamed option",
+          "default": "Unnamed option"
         }
       ]
     },
@@ -171,10 +175,6 @@
         {
           "label": "Search box disabled",
           "default": "Search box disabled."
-        },
-        {
-          "label": "Unnamed option",
-          "default": "Unnamed option"
         },
         {
           "label": "Close",

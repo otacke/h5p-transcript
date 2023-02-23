@@ -159,6 +159,14 @@
         "importance": "low",
         "default": "Chapter marks",
         "optional": true
+      },
+      {
+        "name": "unnamedOption",
+        "type": "text",
+        "label": "Unnamed option",
+        "importance": "low",
+        "default": "Unnamed option",
+        "optional": true
       }
     ]
   },
@@ -340,14 +348,6 @@
         "label": "Search box disabled",
         "importance": "low",
         "default": "Search box disabled.",
-        "optional": true
-      },
-      {
-        "name": "unnamedOption",
-        "type": "text",
-        "label": "Unnamed option",
-        "importance": "low",
-        "default": "Unnamed option",
         "optional": true
       },
       {

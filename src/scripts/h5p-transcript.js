@@ -23,7 +23,9 @@ export default class Transcript extends H5P.EventDispatcher {
       l10n: {
         noMedium: 'No medium was assigned to the transcript.',
         noTranscript: 'No transcript was provided.',
-        troubleWebVTT: 'There seems to be something wrong with the WebVTT file. Please consult the browser\'s development console for more information.'
+        troubleWebVTT: 'There seems to be something wrong with the WebVTT file. Please consult the browser\'s development console for more information.',
+        chapterMarks: 'Chapter marks',
+        unnamedOption: 'Unnamed option'
       },
       a11y: {
         buttonVisible: 'Hide transcript. Currently visible.',
@@ -44,8 +46,7 @@ export default class Transcript extends H5P.EventDispatcher {
         selectField: 'Select what transcript to display.',
         selectFieldDisabled: 'Select field disabled.',
         enterToHighlight: 'Enter a query to highlight relevant text.',
-        searchboxDisabled: 'Search box disabled.',
-        unnamedOption: 'Unnamed option'
+        searchboxDisabled: 'Search box disabled.'
       }
     }, params);
 
@@ -60,7 +61,7 @@ export default class Transcript extends H5P.EventDispatcher {
 
     this.params.transcriptFiles = this.params.transcriptFiles.map((file) => {
       if (typeof file.label !== 'string') {
-        file.label = this.params.a11y.unnamedOption;
+        file.label = this.params.l10n.unnamedOption;
       }
 
       return file;
