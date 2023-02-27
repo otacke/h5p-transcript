@@ -13,14 +13,14 @@
     },
     {
       "label": "Transcript files",
-      "entity": "transcript file",
+      "entity": "5ra6o failas",
       "widgets": [
         {
-          "label": "Default"
+          "label": "Pradinis"
         }
       ],
       "field": {
-        "label": "Transcript file data",
+        "label": "Įrašo failo duomenys",
         "fields": [
           {
             "label": "Transkripcija (WebVTT failas)"
