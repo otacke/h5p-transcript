@@ -12,26 +12,26 @@
       ]
     },
     {
-      "label": "Transcript files",
-      "entity": "transcript file",
+      "label": "Archivos de transcripción",
+      "entity": "archivo de transcripción",
       "widgets": [
         {
-          "label": "Default"
+          "label": "Predeterminado"
         }
       ],
       "field": {
-        "label": "Transcript file data",
+        "label": "Datos del archivo de transcripción",
         "fields": [
           {
             "label": "Transcripción (archivo WebVTT)"
           },
           {
-            "label": "Label",
-            "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+            "label": "Etiqueta",
+            "description": "Etiqueta para identificar la transcripción. No es relevante si usted solamente tiene un archivo de transcripción."
           },
           {
-            "label": "Language code",
-            "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc."
+            "label": "Código de idioma",
+            "description": "La biblioteca de transcripción intentará automáticamente determinar el idioma del texto de la transcripción como la información para lectores de pantalla. Si eso falla, usted puede manualmente configura la \"marca de idioma BCP 47\" - como por ejemplo \"en\" para Inglés, \"es\" para Español, etc."
           }
         ]
       }
@@ -49,14 +49,14 @@
       ]
     },
     {
-      "label": "Chapters",
+      "label": "Capítulos",
       "fields": [
         {
-          "label": "Use bookmarks of Interactive Video"
+          "label": "Usar marcadores de Video Interactivo"
         },
         {
-          "label": "Chapter marks",
-          "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\""
+          "label": "Marcas de capítulo",
+          "description": "Usted puede opcionalmente añadir marcas de capítulo en formato común mp4chaps. La sintaxis es \"hh:mm:ss Título del capítulo\" o \"hh:mm:ss.MMM Título del capítulo\""
         }
       ]
     },
@@ -76,12 +76,12 @@
           "default": "Parece que hay algún problema con el archivo WebVTT. Consulte la consola de desarrollo del navegador para obtener más información."
         },
         {
-          "label": "Chapter marks",
-          "default": "Chapter marks"
+          "label": "Marcas de capítulo",
+          "default": "Marcas de capítulo"
         },
         {
-          "label": "Unnamed option",
-          "default": "Unnamed option"
+          "label": "Opción sin nombre",
+          "default": "Opción sin nombre"
         }
       ]
     },
@@ -145,16 +145,16 @@
           "default": "Opción de salto de línea deshabilitada."
         },
         {
-          "label": "Open chapter marks",
-          "default": "Open chapter marks"
+          "label": "Abrir marcas de capítulo",
+          "default": "Abrir marcas de capítulo"
         },
         {
-          "label": "Close chapter marks",
-          "default": "Close chapter marks"
+          "label": "Cerrar marcas de capítulo",
+          "default": "Cerrar marcas de capítulo"
         },
         {
-          "label": "Chapter marks disabled.",
-          "default": "Chapter marks disabled."
+          "label": "Marcas de capítulo deshabilitadas",
+          "default": "Marcas de capítulo deshabilitadas."
         },
         {
           "label": "Transcripción interactiva",
@@ -165,20 +165,20 @@
           "default": "Escribir una consulta para resaltar el texto relevante."
         },
         {
-          "label": "Select field disabled",
-          "default": "Select field disabled."
+          "label": "Seleccionar campo deshabilitado",
+          "default": "Seleccionar campo deshabilitado."
         },
         {
-          "label": "Enter to highlight",
-          "default": "Enter a query to highlight relevant text."
+          "label": "Escribir para resaltar",
+          "default": "Escriba una consulta para resaltar el texto relevante."
         },
         {
           "label": "Cuadro de búsqueda deshabilitado",
           "default": "Cuadro de búsqueda deshabilitado."
         },
         {
-          "label": "Close",
-          "default": "Close"
+          "label": "Cerrar",
+          "default": "Cerrar"
         }
       ]
     }
