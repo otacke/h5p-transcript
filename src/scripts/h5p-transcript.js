@@ -124,7 +124,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Attach library to wrapper.
-   *
    * @param {H5P.jQuery} $wrapper Content's container.
    */
   attach($wrapper) {
@@ -141,7 +140,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Build contents including DOM and H5P instances.
-   *
    * @param {object} [params={}] Parameters.
    * @param {object} params.medium Medium parameters from subcontent semantics.
    * @param {object} params.previousState Subcontent's previous state.
@@ -231,7 +229,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Build transcript including DOM and H5P instance.
-   *
    * @param {object} [params={}] Parameters.
    * @param {object} params.transcript Transcript parameters.
    * @param {object} params.previousState Transcripts's previous state.
@@ -263,7 +260,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Build DOM.
-   *
    * @returns {HTMLElement} Content DOM.
    */
   buildDOM() {
@@ -278,7 +274,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Make it easy to bubble events from parent to children.
-   *
    * @param {object} origin Origin of the event.
    * @param {string} eventName Name of the event.
    * @param {object[]} targets Targets to trigger event on.
@@ -297,7 +292,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Make it easy to bubble events from child to parent.
-   *
    * @param {object} origin Origin of event.
    * @param {string} eventName Name of event.
    * @param {object} target Target to trigger event on.
@@ -318,7 +312,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Handle timer position changed.
-   *
    * @param {number} time Time in seconds.
    */
   handlePositionChanged(time) {
@@ -340,7 +333,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Determine whether an H5P instance is a task.
-   *
    * @param {H5P.ContentType} instance Instance.
    * @returns {boolean} True, if instance is a task.
    */
@@ -359,7 +351,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Track scoring of content.
-   *
    * @param {Event} event Event.
    */
   trackScoring(event) {
@@ -375,7 +366,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Check if result has been submitted or input has been given.
-   *
    * @returns {boolean} True, if answer was given.
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-1}
    */
@@ -387,7 +377,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get score.
-   *
    * @returns {number} Score.
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-2}
    */
@@ -399,7 +388,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get maximum possible score.
-   *
    * @returns {number} Maximum possible score.
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-3}
    */
@@ -411,7 +399,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Show solutions.
-   *
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-4}
    */
   showSolutions() {
@@ -425,7 +412,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Reset task.
-   *
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-5}
    */
   resetTask() {
@@ -440,7 +426,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get xAPI data.
-   *
    * @returns {object} XAPI statement.
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-6}
    */
@@ -462,7 +447,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get xAPI data from sub content types.
-   *
    * @returns {object[]} XAPI data objects used to build report.
    */
   getXAPIDataFromMedium() {
@@ -473,7 +457,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Create an xAPI event.
-   *
    * @param {string} verb Short id of the verb we want to trigger.
    * @returns {H5P.XAPIEvent} Event template.
    */
@@ -488,7 +471,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get the xAPI definition for the xAPI object.
-   *
    * @returns {object} XAPI definition.
    */
   getxAPIDefinition() {
@@ -511,7 +493,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get task title.
-   *
    * @returns {string} Title.
    */
   getTitle() {
@@ -523,7 +504,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get description.
-   *
    * @returns {string} Description.
    */
   getDescription() {
@@ -532,7 +512,6 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get current state.
-   *
    * @returns {object} Current state.
    */
   getCurrentState() {
