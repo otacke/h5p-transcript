@@ -1,6 +1,6 @@
-import Util from './util';
-import Dictionary from './services/dictionary';
-import '../styles/h5p-transcript.scss';
+import Util from '@services/util';
+import Dictionary from '@services/dictionary';
+import '@styles/h5p-transcript.scss';
 
 export default class Transcript extends H5P.EventDispatcher {
   /**
