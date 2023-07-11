@@ -20,12 +20,12 @@ module.exports = {
     minimizer: [
       new TerserPlugin({
         terserOptions: {
-          compress:{
+          compress: {
             drop_console: true,
           }
         }
-      }),
-    ],
+      })
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -57,7 +57,9 @@ module.exports = {
               publicPath: ''
             }
           },
-          { loader: 'css-loader' },
+          {
+            loader: 'css-loader'
+          },
           {
             loader: 'sass-loader'
           }
