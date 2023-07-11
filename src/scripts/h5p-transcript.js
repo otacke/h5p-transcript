@@ -140,7 +140,7 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Build contents including DOM and H5P instances.
-   * @param {object} [params={}] Parameters.
+   * @param {object} [params] Parameters.
    * @param {object} params.medium Medium parameters from subcontent semantics.
    * @param {object} params.previousState Subcontent's previous state.
    * @returns {object} Contents including DOM and instance.
@@ -229,7 +229,7 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Build transcript including DOM and H5P instance.
-   * @param {object} [params={}] Parameters.
+   * @param {object} [params] Parameters.
    * @param {object} params.transcript Transcript parameters.
    * @param {object} params.previousState Transcripts's previous state.
    * @returns {object} Transcript including DOM and instance.
