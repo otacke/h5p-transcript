@@ -12,7 +12,29 @@
       ]
     },
     {
-      "label": "Transkript (WebVTT-Datei)"
+      "label": "Transkriptdateien",
+      "entity": "Transkriptdatei",
+      "widgets": [
+        {
+          "label": "Vorgabewert"
+        }
+      ],
+      "field": {
+        "label": "Transkriptdateidaten",
+        "fields": [
+          {
+            "label": "Transkript (WebVTT-Datei)"
+          },
+          {
+            "label": "Beschriftung",
+            "description": "Beschriftung, um das Transkript zu identifizieren. Nicht relevant, wenn es nur eine Transkriptdatei gibt."
+          },
+          {
+            "label": "Sprachcode",
+            "description": "Die Transkriptbibliothek wird versuchen, die Sprache des Transkripts automatisch für Screenreader zu ermitteln. Für den Fall, dass das nicht gelingt, kannst du händisch eine \"BCP 47-Sprachmarkierung\" setzen - z. B. \"de\" für Deutsch, \"nb\" für das norwegische bokmål, usw."
+          }
+        ]
+      }
     },
     {
       "label": "Verhaltenseinstellungen",
@@ -23,6 +45,18 @@
         },
         {
           "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Kapitel",
+      "fields": [
+        {
+          "label": "Benutze die Lesezeichen von Interactive Video"
+        },
+        {
+          "label": "Kapitelmarken",
+          "description": "Du kannst optional Kapitelmarken im gängigen mp4chaps-Format hinzufügen. Die Syntax lautet \"hh:mm:ss Kapiteltitel\" oder \"hh:mm:ss.MMM Kapiteltitel\""
         }
       ]
     },
@@ -40,6 +74,14 @@
         {
           "label": "Problem mit WebVTT-Datei",
           "default": "Es scheint etwas mit der WebVTT-Datei nicht in Ordnung zu sein. Bitte prüfe die Ausgabe der Entwicklungskonsole des Brosers für nähere Informationen."
+        },
+        {
+          "label": "Kapitelmarken",
+          "default": "Kapitelmarken"
+        },
+        {
+          "label": "Unbenannte Option",
+          "default": "Unbenannte Option"
         }
       ]
     },
@@ -68,7 +110,7 @@
         },
         {
           "label": "Ansicht: Interaktives Transkript",
-          "default": "Schalte in die Ansicht mit einfachem Text."
+          "default": "Schalte in die Ansicht mit einfachem Text"
         },
         {
           "label": "Ansicht: einfacher Text",
@@ -91,16 +133,28 @@
           "default": "Startzeitoption deaktiviert."
         },
         {
-          "label": "Line breaks active",
-          "default": "Hide line breaks. Currently shown."
+          "label": "Zeilenumbrüche aktiv",
+          "default": "Brich Zeilen nicht um. Werden derzeit umgebrochen."
         },
         {
-          "label": "Line breaks inactive",
-          "default": "Show line breaks. Currently not shown."
+          "label": "Zeilenumbrüche inaktiv",
+          "default": "Brich Zeilen um. Werden derzeit nicht umgebrochen."
         },
         {
-          "label": "Line breaks disabled",
-          "default": "Line break option disabled."
+          "label": "Zeilenumbrüche deaktiviert",
+          "default": "Option für Zeilenumbrüche deaktiviert."
+        },
+        {
+          "label": "Öffne Kapitelmarken",
+          "default": "Öffne Kapitelmarken"
+        },
+        {
+          "label": "Schließe Kapitelmarken",
+          "default": "Schließe Kapitelmarken"
+        },
+        {
+          "label": "Kapitelmarken deaktiviert",
+          "default": "Kapitelmarken deaktiviert."
         },
         {
           "label": "Interaktives Transkript",
@@ -111,8 +165,20 @@
           "default": "Gibt einen Suchbegriff ein, um entsprechenden Text zu markieren."
         },
         {
+          "label": "Auswahlfeld deaktiviert",
+          "default": "Auswahlfeld deaktiviert."
+        },
+        {
+          "label": "Zum Hervorheben eingeben",
+          "default": "Gib eine Suchanfrage ein, um relevanten Text zu markieren."
+        },
+        {
           "label": "Suchfeld deaktiviert",
           "default": "Suchfeld deaktiviert."
+        },
+        {
+          "label": "Schließen",
+          "default": "Schließen"
         }
       ]
     }

@@ -12,7 +12,29 @@
       ]
     },
     {
-      "label": "Transcrición (ficheiro WebVTT)"
+      "label": "Arquivos de transcrición",
+      "entity": "ficheiro de transcrición",
+      "widgets": [
+        {
+          "label": "Por defecto"
+        }
+      ],
+      "field": {
+        "label": "Datos do ficheiro de transcrición",
+        "fields": [
+          {
+            "label": "Transcrición (ficheiro WebVTT)"
+          },
+          {
+            "label": "Etiqueta",
+            "description": "Etiqueta coa que identificar a transcrición. Non relevante se só tes un ficheiro de transcrición."
+          },
+          {
+            "label": "Código de idioma",
+            "description": "A biblioteca de transcricións tentará determinar automaticamente o idioma do texto de transcrición como información para os lectores de pantalla. Se iso falla, podes configurar manualmente a \"etiqueta de idioma BCP 47\" - por exemplo, \"en\" para o inglés, \"nb\" para o noruegués bokmål, etc."
+          }
+        ]
+      }
     },
     {
       "label": "Configuración do comportamento",
@@ -23,6 +45,18 @@
         },
         {
           "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Capítulos",
+      "fields": [
+        {
+          "label": "Usar os marcadores de vídeo interactivo"
+        },
+        {
+          "label": "Marcas de capítulo",
+          "description": "Opcionalmente, podes engadir marcas de capítulo no formato común mp4chaps. A sintaxe é \"hh:mm:ss Título do capítulo\" ou \"hh:mm:ss.MMM Título do capítulo\""
         }
       ]
     },
@@ -40,10 +74,19 @@
         {
           "label": "Problema co ficheiro WebVTT",
           "default": "Parece que hai algo mal co ficheiro WebVTT. Consulte a consola de desenvolvemento do navegador para obter máis información."
+        },
+        {
+          "label": "Marcas de capítulo",
+          "default": "Marcas de capítulo"
+        },
+        {
+          "label": "Opción sen nome",
+          "default": "Opción sen nome"
         }
       ]
     },
     {
+      "label": "Lector de pantalla",
       "fields": [
         {
           "label": "Transcrición visible",
@@ -102,6 +145,18 @@
           "default": "Opción de salto de liña desactivada."
         },
         {
+          "label": "Abrir marcas de capítulo",
+          "default": "Abrir marcas de capítulo"
+        },
+        {
+          "label": "Pechar marcas de capítulo",
+          "default": "Pechar marcas de capítulo"
+        },
+        {
+          "label": "Marcas de capítulo desactivadas",
+          "default": "Marcas de capítulo desactivadas."
+        },
+        {
           "label": "Transcrición interactiva",
           "default": "Transcrición interactiva"
         },
@@ -110,11 +165,22 @@
           "default": "Introduza unha consulta para resaltar o texto relevante."
         },
         {
+          "label": "Campo de selección desactivado",
+          "default": "Campo de selección desactivado."
+        },
+        {
+          "label": "Premer Enter para resaltar",
+          "default": "Introduce unha consulta para resaltar o texto relevante."
+        },
+        {
           "label": "Caixa de busca desactivada",
           "default": "Caixa de busca desactivada."
+        },
+        {
+          "label": "Pechar",
+          "default": "Pechar"
         }
-      ],
-      "label": "Lector de pantalla"
+      ]
     }
   ]
 }

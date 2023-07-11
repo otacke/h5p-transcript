@@ -12,7 +12,29 @@
       ]
     },
     {
-      "label": "Transcripción (archivo WebVTT)"
+      "label": "Archivos de transcripción",
+      "entity": "archivo de transcripción",
+      "widgets": [
+        {
+          "label": "Predeterminado"
+        }
+      ],
+      "field": {
+        "label": "Datos del archivo de transcripción",
+        "fields": [
+          {
+            "label": "Transcripción (archivo WebVTT)"
+          },
+          {
+            "label": "Etiqueta",
+            "description": "Etiqueta para identificar la transcripción. No es relevante si usted solamente tiene un archivo de transcripción."
+          },
+          {
+            "label": "Código de idioma",
+            "description": "La biblioteca de transcripción intentará automáticamente determinar el idioma del texto de la transcripción como la información para lectores de pantalla. Si eso falla, usted puede manualmente configura la \"marca de idioma BCP 47\" - como por ejemplo \"en\" para Inglés, \"es\" para Español, etc."
+          }
+        ]
+      }
     },
     {
       "label": "Configuraciones del comportamiento",
@@ -23,6 +45,18 @@
         },
         {
           "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Capítulos",
+      "fields": [
+        {
+          "label": "Usar marcadores de Video Interactivo"
+        },
+        {
+          "label": "Marcas de capítulo",
+          "description": "Usted puede opcionalmente añadir marcas de capítulo en formato común mp4chaps. La sintaxis es \"hh:mm:ss Título del capítulo\" o \"hh:mm:ss.MMM Título del capítulo\""
         }
       ]
     },
@@ -40,6 +74,14 @@
         {
           "label": "Problema con el archivo WebVTT",
           "default": "Parece que hay algún problema con el archivo WebVTT. Consulte la consola de desarrollo del navegador para obtener más información."
+        },
+        {
+          "label": "Marcas de capítulo",
+          "default": "Marcas de capítulo"
+        },
+        {
+          "label": "Opción sin nombre",
+          "default": "Opción sin nombre"
         }
       ]
     },
@@ -103,6 +145,18 @@
           "default": "Opción de salto de línea deshabilitada."
         },
         {
+          "label": "Abrir marcas de capítulo",
+          "default": "Abrir marcas de capítulo"
+        },
+        {
+          "label": "Cerrar marcas de capítulo",
+          "default": "Cerrar marcas de capítulo"
+        },
+        {
+          "label": "Marcas de capítulo deshabilitadas",
+          "default": "Marcas de capítulo deshabilitadas."
+        },
+        {
           "label": "Transcripción interactiva",
           "default": "Transcripción interactiva"
         },
@@ -111,8 +165,20 @@
           "default": "Escribir una consulta para resaltar el texto relevante."
         },
         {
+          "label": "Seleccionar campo deshabilitado",
+          "default": "Seleccionar campo deshabilitado."
+        },
+        {
+          "label": "Escribir para resaltar",
+          "default": "Escriba una consulta para resaltar el texto relevante."
+        },
+        {
           "label": "Cuadro de búsqueda deshabilitado",
           "default": "Cuadro de búsqueda deshabilitado."
+        },
+        {
+          "label": "Cerrar",
+          "default": "Cerrar"
         }
       ]
     }

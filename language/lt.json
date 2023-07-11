@@ -12,14 +12,36 @@
       ]
     },
     {
-      "label": "Transkripcija (WebVTT failas)"
+      "label": "Įrašo failai",
+      "entity": "įrašo failas",
+      "widgets": [
+        {
+          "label": "Pradinis"
+        }
+      ],
+      "field": {
+        "label": "Įrašo failo duomenys",
+        "fields": [
+          {
+            "label": "Transkripcija (WebVTT failas)"
+          },
+          {
+            "label": "Pavadinimas",
+            "description": "Pavadinimas, pagal kurį identifikuojamas įrašas. Neaktualu, jei turite tik vieną įrašo failą."
+          },
+          {
+            "label": "Kalbos kodas",
+            "description": "Įrašo biblioteka bandys automatiškai nustatyti įrašo teksto kalbą kaip informaciją ekrano skaitytuvams. Jei nepavyksta, galite rankiniu būdu nustatyti „BCP 47 kalbos žymą“ – pvz. „en“ – anglų kalba, „nb“ – norvegų bokmål ir kt."
+          }
+        ]
+      }
     },
     {
       "label": "Veikimo nustatymai",
       "fields": [
         {
           "label": "Didžiausias eilučių skaičius",
-          "description": "Maximum number of transcript lines that should be displayed at once. If left out or 0, will display complete transcript."
+          "description": "Didžiausias įrašo eilučių skaičius, kuris turėtų būti rodomas vienu metu. Jei neįtrauksite arba 0, bus rodomas visas nuorašas."
         },
         {
           "label": "Maketas"
@@ -27,68 +49,88 @@
       ]
     },
     {
-      "label": "Naudotojo sąsaja",
+      "label": "Skyriai",
       "fields": [
         {
-          "label": "No medium provided",
-          "default": "No medium was assigned to the transcript."
+          "label": "Naudokite interaktyvaus video žymas"
         },
         {
-          "label": "No transcript provided",
-          "default": "No transcript was provided."
-        },
-        {
-          "label": "Problema su WebVTT failu",
-          "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information."
+          "label": "Skyrių žymos",
+          "description": "Galite pasirinktinai pridėti skyrių žymes įprastu mp4chaps formatu. Sintaksė yra „hh:mm:ss Skyriaus pavadinimas“ arba „hh:mm:ss.MMM Skyriaus pavadinimas“"
         }
       ]
     },
     {
-      "label": "Readspeaker",
+      "label": "Naudotojo sąsaja",
       "fields": [
         {
-          "label": "Transcript visible",
-          "default": "Hide transcript. Currently visible."
+          "label": "Laikmena nepateikta",
+          "default": "Laikmena nepriskirta įrašui"
         },
         {
-          "label": "Transcript invisible",
-          "default": "Show transcript. Currently not visible."
+          "label": "Nepateiktas įrašas",
+          "default": "Nepateiktas įrašas"
         },
         {
-          "label": "Autoscroll active",
-          "default": "Turn off autoscroll. Currently active."
+          "label": "Problema su WebVTT failu",
+          "default": "Atrodo, kad kažkas negerai su WebVTT failu. Daugiau informacijos rasite naršyklės kūrimo konsolėje."
         },
         {
-          "label": "Autoscroll inactive",
-          "default": "Turn on autoscroll. Currently not active."
+          "label": "Skyriaus žyma",
+          "default": "Skyrių žymos"
         },
         {
-          "label": "Autoscroll disabled",
-          "default": "Autoscroll option disabled."
+          "label": "Neįvardintos fukcijos",
+          "default": "Nepavadintos fukcijos"
+        }
+      ]
+    },
+    {
+      "label": "Skaitovas",
+      "fields": [
+        {
+          "label": "Įrašas matomas",
+          "default": "Paslėpti įrašą. Dabar matomas"
         },
         {
-          "label": "Interactive transcript view",
-          "default": "Switch to plaintext view"
+          "label": "Įrašas nematomas",
+          "default": "Rodyti įrašą. Dabar nematomas."
         },
         {
-          "label": "Plain text view",
-          "default": "Switch to interactive transcript view."
+          "label": "Autoslinkimas įjungtas",
+          "default": "Išjungtiautoslinkimą. Dabar įjungtas."
         },
         {
-          "label": "Mode switching disabled",
-          "default": "Mode switching disabled."
+          "label": "Autoslinkimas neįjungtas",
+          "default": "Įjungti autoslinkimą. Dabar neįjungtas"
         },
         {
-          "label": "Start time active",
-          "default": "Hide start time. Currently shown."
+          "label": "Autoslinkimas uždraustas.",
+          "default": "Autoslinkimo fukcija išjungta."
         },
         {
-          "label": "Start time inactive",
-          "default": "Show start time. Currently not shown."
+          "label": "Interaktyvi įrašo peržiūra",
+          "default": "Perjungti į paprasto teksto rodymą"
         },
         {
-          "label": "Start time disabled",
-          "default": "Start time option disabled."
+          "label": "Paprasto teksto rodymas",
+          "default": "Perjungti į interaktyvų įrašo rodymą."
+        },
+        {
+          "label": "Režimo perjungimas išjungtas",
+          "default": "Režimo perjungimas išjungtas."
+        },
+        {
+          "label": "Pradžios laikas įjungtas",
+          "default": "Slėpti pradžios laiką. Dabar rodomas."
+        },
+        {
+          "label": "Pradžios laikas neįjungtas",
+          "default": "Rodyti pradžio laiką. Dabar nerodomas."
+        },
+        {
+          "label": "Pradžios laikas išjungtas",
+          "default": "Pradžios laiko fukcija išjungta."
         },
         {
           "label": "Line breaks active",
@@ -103,6 +145,18 @@
           "default": "Line break option disabled."
         },
         {
+          "label": "Open chapter marks",
+          "default": "Open chapter marks"
+        },
+        {
+          "label": "Close chapter marks",
+          "default": "Close chapter marks"
+        },
+        {
+          "label": "Chapter marks disabled.",
+          "default": "Chapter marks disabled."
+        },
+        {
           "label": "Interactive transcript",
           "default": "Interactive transcript"
         },
@@ -111,8 +165,20 @@
           "default": "Enter a query to highlight relevant text."
         },
         {
+          "label": "Select field disabled",
+          "default": "Select field disabled."
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
           "label": "Search box disabled",
           "default": "Search box disabled."
+        },
+        {
+          "label": "Close",
+          "default": "Close"
         }
       ]
     }

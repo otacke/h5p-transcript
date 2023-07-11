@@ -25,14 +25,50 @@
     ]
   },
   {
-    "name": "transcriptFile",
-    "type": "file",
-    "label": "Transcript (WebVTT file)"
+    "name": "transcriptFiles",
+    "type": "list",
+    "label": "Transcript files",
+    "entity": "transcript file",
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+    "min": 1,
+    "field": {
+      "name": "transcriptFileData",
+      "type": "group",
+      "label": "Transcript file data",
+      "importance": "high",
+      "fields": [
+        {
+          "name": "transcriptFile",
+          "type": "file",
+          "label": "Transcript (WebVTT file)"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "label": "Label",
+          "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+        },
+        {
+          "name": "languageCode",
+          "type": "text",
+          "label": "Language code",
+          "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc.",
+          "maxLength": 2,
+          "optional": true
+        }
+      ]
+    }
   },
   {
     "name": "behaviour",
     "type": "group",
     "label": "Behavioural settings",
+    "importance": "low",
     "fields": [
       {
         "name": "maxLines",
@@ -48,6 +84,40 @@
         "type": "boolean",
         "widget": "none",
         "label": "Dummy"
+      }
+    ]
+  },
+  {
+    "name": "chapters",
+    "type": "group",
+    "label": "Chapters",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "useIVBookmarks",
+        "type": "boolean",
+        "label": "Use bookmarks of Interactive Video",
+        "default": false,
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "../mediumGroup/medium",
+              "equals": [
+                "H5P.InteractiveVideo"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "chapterMarks",
+        "type": "text",
+        "label": "Chapter marks",
+        "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\"",
+        "widget": "textarea",
+        "optional": true
       }
     ]
   },
@@ -80,6 +150,22 @@
         "label": "Problem with WebVTT file",
         "importance": "low",
         "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information.",
+        "optional": true
+      },
+      {
+        "name": "chapterMarks",
+        "type": "text",
+        "label": "Chapter marks",
+        "importance": "low",
+        "default": "Chapter marks",
+        "optional": true
+      },
+      {
+        "name": "unnamedOption",
+        "type": "text",
+        "label": "Unnamed option",
+        "importance": "low",
+        "default": "Unnamed option",
         "optional": true
       }
     ]
@@ -204,11 +290,48 @@
         "optional": true
       },
       {
+        "name": "buttonChapterMarksOpen",
+        "type": "text",
+        "label": "Open chapter marks",
+        "importance": "low",
+        "default": "Open chapter marks"
+      },
+      {
+        "name": "buttonChapterMarksClose",
+        "type": "text",
+        "label": "Close chapter marks",
+        "importance": "low",
+        "default": "Close chapter marks"
+      },
+      {
+        "name": "buttonChapterMarksDisabled",
+        "type": "text",
+        "label": "Chapter marks disabled",
+        "importance": "low",
+        "default": "Chapter marks disabled."
+      },
+      {
         "name": "interactiveTranscript",
         "type": "text",
         "label": "Interactive transcript",
         "importance": "low",
         "default": "Interactive transcript",
+        "optional": true
+      },
+      {
+        "name": "selectField",
+        "type": "text",
+        "label": "Select transcript",
+        "importance": "low",
+        "default": "Select what transcript to display.",
+        "optional": true
+      },
+      {
+        "name": "selectFieldDisabled",
+        "type": "text",
+        "label": "Select field disabled",
+        "importance": "low",
+        "default": "Select field disabled.",
         "optional": true
       },
       {
@@ -225,6 +348,14 @@
         "label": "Search box disabled",
         "importance": "low",
         "default": "Search box disabled.",
+        "optional": true
+      },
+      {
+        "name": "close",
+        "type": "text",
+        "label": "Close",
+        "importance": "low",
+        "default": "Close",
         "optional": true
       }
     ]

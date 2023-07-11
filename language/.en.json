@@ -12,7 +12,29 @@
       ]
     },
     {
-      "label": "Transcript (WebVTT file)"
+      "label": "Transcript files",
+      "entity": "transcript file",
+      "widgets": [
+        {
+          "label": "Default"
+        }
+      ],
+      "field": {
+        "label": "Transcript file data",
+        "fields": [
+          {
+            "label": "Transcript (WebVTT file)"
+          },
+          {
+            "label": "Label",
+            "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+          },
+          {
+            "label": "Language code",
+            "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc."
+          }
+        ]
+      }
     },
     {
       "label": "Behavioural settings",
@@ -23,6 +45,18 @@
         },
         {
           "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Chapters",
+      "fields": [
+        {
+          "label": "Use bookmarks of Interactive Video"
+        },
+        {
+          "label": "Chapter marks",
+          "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\""
         }
       ]
     },
@@ -40,6 +74,14 @@
         {
           "label": "Problem with WebVTT file",
           "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information."
+        },
+        {
+          "label": "Chapter marks",
+          "default": "Chapter marks"
+        },
+        {
+          "label": "Unnamed option",
+          "default": "Unnamed option"
         }
       ]
     },
@@ -103,6 +145,18 @@
           "default": "Line break option disabled."
         },
         {
+          "label": "Open chapter marks",
+          "default": "Open chapter marks"
+        },
+        {
+          "label": "Close chapter marks",
+          "default": "Close chapter marks"
+        },
+        {
+          "label": "Chapter marks disabled",
+          "default": "Chapter marks disabled."
+        },
+        {
           "label": "Interactive transcript",
           "default": "Interactive transcript"
         },
@@ -111,8 +165,20 @@
           "default": "Enter a query to highlight relevant text."
         },
         {
+          "label": "Select field disabled",
+          "default": "Select field disabled."
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
           "label": "Search box disabled",
           "default": "Search box disabled."
+        },
+        {
+          "label": "Close",
+          "default": "Close"
         }
       ]
     }

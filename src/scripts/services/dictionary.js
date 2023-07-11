@@ -1,10 +1,9 @@
-import he from 'he';
+import { decode } from 'he';
 
 export default class Dictionary {
 
   /**
    * Fill dictionary with translations.
-   *
    * @param {object} translation Translations.
    */
   static fill(translation = {}) {
@@ -13,7 +12,6 @@ export default class Dictionary {
 
   /**
    * Get translation for a key.
-   *
    * @param {string} key Key to look for.
    * @param {object} [base] Base to start looking.
    * @returns {string} Translation.
@@ -36,7 +34,6 @@ export default class Dictionary {
 
   /**
    * Sanitize translations recursively: HTML decode and strip HTML.
-   *
    * @param {string|object} translation Translation.
    * @returns {string} Translation value.
    */
@@ -47,7 +44,7 @@ export default class Dictionary {
       }
     }
     else if (typeof translation === 'string') {
-      translation = he.decode(translation);
+      translation = decode(translation);
       const div = document.createElement('div');
       div.innerHTML = translation;
       translation = div.textContent || div.innerText || '';

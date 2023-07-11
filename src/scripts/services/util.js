@@ -2,14 +2,16 @@
 export default class Util {
   /**
    * Extend an array just like JQuery's extend.
-   *
    * @returns {object} Merged objects.
    */
   static extend() {
     for (let i = 1; i < arguments.length; i++) {
       for (let key in arguments[i]) {
         if (Object.prototype.hasOwnProperty.call(arguments[i], key)) {
-          if (typeof arguments[0][key] === 'object' && typeof arguments[i][key] === 'object') {
+          if (
+            typeof arguments[0][key] === 'object' &&
+            typeof arguments[i][key] === 'object'
+          ) {
             this.extend(arguments[0][key], arguments[i][key]);
           }
           else {
@@ -23,7 +25,6 @@ export default class Util {
 
   /**
    * Retrieve true string from HTML encoded string.
-   *
    * @param {string} input Input string.
    * @returns {string} Output string.
    */
@@ -34,7 +35,6 @@ export default class Util {
 
   /**
    * Retrieve string without HTML tags.
-   *
    * @param {string} html Input string.
    * @returns {string} Output string.
    */
@@ -47,7 +47,6 @@ export default class Util {
   /**
    * Format language tag (RFC 5646). Assuming "language-coutry". No validation.
    * Cmp. https://tools.ietf.org/html/rfc5646
-   *
    * @param {string} languageCode Language tag.
    * @returns {string} Formatted language tag.
    */
@@ -68,5 +67,33 @@ export default class Util {
     languageCode = segments.join('-');
 
     return languageCode;
+  }
+
+  /**
+   * Convert seconds to mp4chaps timecode.
+   * @param {number} seconds The time in seconds (float for ms).
+   * @returns {string|undefined} The humanized timecode.
+   */
+  static toMP4ChapsTimecode(seconds) {
+    if (typeof seconds !== 'number' || seconds < 0) {
+      return;
+    }
+
+    const ms = Math.round(1000 * (seconds - Math.floor(seconds)));
+    seconds = Math.floor(seconds);
+
+    const hours = Math.floor(seconds / 3600);
+    seconds -= hours * 3600;
+
+    const minutes = Math.floor(seconds / 60);
+    seconds -= minutes * 60;
+
+    let timecode = '';
+    timecode += hours.toString().padStart(2, '0');
+    timecode += `:${minutes.toString().padStart(2, '0')}`;
+    timecode += `:${seconds.toString().padStart(2, '0')}`;
+    timecode += `.${ms.toString().padStart(3, '0')}`;
+
+    return timecode;
   }
 }
