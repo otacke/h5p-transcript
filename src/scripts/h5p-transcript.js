@@ -512,9 +512,13 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get current state.
-   * @returns {object} Current state.
+   * @returns {object|undefined} Current state.
    */
   getCurrentState() {
+    if (!this.getAnswerGiven()) {
+      return;
+    }
+
     return {
       medium:
         (typeof this.medium.instance?.getCurrentState === 'function') ?
