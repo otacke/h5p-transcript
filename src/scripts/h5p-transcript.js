@@ -419,6 +419,8 @@ export default class Transcript extends H5P.EventDispatcher {
       this.medium.instance.resetTask();
     }
 
+    this.wasReset = true;
+
     this.transcript.reset();
 
     this.trigger('resize');
@@ -516,7 +518,8 @@ export default class Transcript extends H5P.EventDispatcher {
    */
   getCurrentState() {
     if (!this.getAnswerGiven()) {
-      return;
+      // Ensure old states are cleared in DB after reset
+      return this.wasReset ? {} : undefined;
     }
 
     return {
