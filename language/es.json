@@ -44,7 +44,8 @@
           "description": "Número máximo de líneas de transcripción mostradas a la vez. Si no se configura o su valor es 0, se mostrará la transcripción completa."
         },
         {
-          "label": "Maniquí"
+          "label": "Show transcript on load",
+          "description": "You can select whether the transcript should be shown when the content is loaded or not."
         }
       ]
     },

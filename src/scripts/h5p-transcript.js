@@ -18,7 +18,8 @@ export default class Transcript extends H5P.EventDispatcher {
       transcriptFiles: [],
       chapters: {},
       behaviour: {
-        maxLines: 10
+        maxLines: 10,
+        showOnLoad: true
       },
       l10n: {
         noMedium: 'No medium was assigned to the transcript.',
@@ -119,6 +120,10 @@ export default class Transcript extends H5P.EventDispatcher {
     // Expect parent to set activity started when parent is shown
     if (typeof this.isRoot === 'function' && this.isRoot()) {
       this.setActivityStarted();
+    }
+
+    if (!this.params.behaviour.showOnLoad) {
+      this.transcript.instance?.hideTranscripts();
     }
   }
 

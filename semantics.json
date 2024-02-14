@@ -80,10 +80,12 @@
         "optional": true
       },
       {
-        "name": "dummy",
+        "name": "showOnLoad",
         "type": "boolean",
-        "widget": "none",
-        "label": "Dummy"
+        "label": "Show transcript on load",
+        "description": "You can select whether the transcript should be shown when the content is loaded or not.",
+        "default": true,
+        "optional": true
       }
     ]
   },

@@ -44,7 +44,8 @@
           "description": "Maximale Anzahl an Zeilen des Transkripts, die zur selben Zeit angezeigt werden sollen. Wenn nichts oder 0 gesetzt wird, wird das gesamte Transkript angezeigt."
         },
         {
-          "label": "Dummy"
+          "label": "Zeige Transkript beim Start an",
+          "description": "Du kannst einstellen, ob das Transkript beim Start angezeigt werden soll oder nicht."
         }
       ]
     },
