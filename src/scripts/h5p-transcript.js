@@ -386,7 +386,7 @@ export default class Transcript extends H5P.EventDispatcher {
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-2}
    */
   getScore() {
-    return (this.medium?.instance?.getScore === 'function') ?
+    return (typeof this.medium?.instance?.getScore === 'function') ?
       this.medium.instance.getScore() :
       0;
   }
@@ -397,7 +397,7 @@ export default class Transcript extends H5P.EventDispatcher {
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-3}
    */
   getMaxScore() {
-    return (this.medium?.instance?.getMaxScore === 'function') ?
+    return (typeof this.medium?.instance?.getMaxScore === 'function') ?
       this.medium.instance.getMaxScore() :
       0;
   }
@@ -458,7 +458,7 @@ export default class Transcript extends H5P.EventDispatcher {
    */
   getXAPIDataFromMedium() {
     return (typeof this.medium.instance?.getXAPIData === 'function') ?
-      this.medium.instance.getXAPIData() :
+      [this.medium.instance.getXAPIData()] :
       [];
   }
 
