@@ -439,7 +439,8 @@ export default class Transcript extends H5P.EventDispatcher {
   getXAPIData() {
     var xAPIEvent = this.createXAPIEvent('answered');
 
-    xAPIEvent.setScoredResult(this.getScore(),
+    xAPIEvent.setScoredResult(
+      this.getScore(),
       this.getMaxScore(),
       this,
       true,
