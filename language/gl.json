@@ -44,7 +44,8 @@
           "description": "Número máximo de liñas de transcrición que deben amosarse á vez. Se se omite ou ten valor 0, amosará a transcrición completa."
         },
         {
-          "label": "Maniquí"
+          "label": "Show transcript on load",
+          "description": "You can select whether the transcript should be shown when the content is loaded or not."
         }
       ]
     },

@@ -18,7 +18,8 @@ export default class Transcript extends H5P.EventDispatcher {
       transcriptFiles: [],
       chapters: {},
       behaviour: {
-        maxLines: 10
+        maxLines: 10,
+        showOnLoad: true
       },
       l10n: {
         noMedium: 'No medium was assigned to the transcript.',
@@ -119,6 +120,10 @@ export default class Transcript extends H5P.EventDispatcher {
     // Expect parent to set activity started when parent is shown
     if (typeof this.isRoot === 'function' && this.isRoot()) {
       this.setActivityStarted();
+    }
+
+    if (!this.params.behaviour.showOnLoad) {
+      this.transcript.instance?.hideTranscripts();
     }
   }
 
@@ -381,7 +386,7 @@ export default class Transcript extends H5P.EventDispatcher {
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-2}
    */
   getScore() {
-    return (this.medium?.instance?.getScore === 'function') ?
+    return (typeof this.medium?.instance?.getScore === 'function') ?
       this.medium.instance.getScore() :
       0;
   }
@@ -392,7 +397,7 @@ export default class Transcript extends H5P.EventDispatcher {
    * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-3}
    */
   getMaxScore() {
-    return (this.medium?.instance?.getMaxScore === 'function') ?
+    return (typeof this.medium?.instance?.getMaxScore === 'function') ?
       this.medium.instance.getMaxScore() :
       0;
   }
@@ -419,6 +424,8 @@ export default class Transcript extends H5P.EventDispatcher {
       this.medium.instance.resetTask();
     }
 
+    this.wasReset = true;
+
     this.transcript.reset();
 
     this.trigger('resize');
@@ -432,7 +439,8 @@ export default class Transcript extends H5P.EventDispatcher {
   getXAPIData() {
     var xAPIEvent = this.createXAPIEvent('answered');
 
-    xAPIEvent.setScoredResult(this.getScore(),
+    xAPIEvent.setScoredResult(
+      this.getScore(),
       this.getMaxScore(),
       this,
       true,
@@ -451,7 +459,7 @@ export default class Transcript extends H5P.EventDispatcher {
    */
   getXAPIDataFromMedium() {
     return (typeof this.medium.instance?.getXAPIData === 'function') ?
-      this.medium.instance.getXAPIData() :
+      [this.medium.instance.getXAPIData()] :
       [];
   }
 
@@ -512,9 +520,14 @@ export default class Transcript extends H5P.EventDispatcher {
 
   /**
    * Get current state.
-   * @returns {object} Current state.
+   * @returns {object|undefined} Current state.
    */
   getCurrentState() {
+    if (!this.getAnswerGiven()) {
+      // Ensure old states are cleared in DB after reset
+      return this.wasReset ? {} : undefined;
+    }
+
     return {
       medium:
         (typeof this.medium.instance?.getCurrentState === 'function') ?

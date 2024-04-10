@@ -44,7 +44,8 @@
           "description": "Maximum number of transcript lines that should be displayed at once. If left out or 0, will display complete transcript."
         },
         {
-          "label": "Dummy"
+          "label": "Show transcript on load",
+          "description": "You can select whether the transcript should be shown when the content is loaded or not."
         }
       ]
     },

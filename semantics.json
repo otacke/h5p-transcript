@@ -12,7 +12,7 @@
         "label": "Medium",
         "options": [
           "H5P.Audio 1.5",
-          "H5P.InteractiveVideo 1.24",
+          "H5P.InteractiveVideo 1.26",
           "H5P.Video 1.6"
         ]
       },
@@ -80,10 +80,12 @@
         "optional": true
       },
       {
-        "name": "dummy",
+        "name": "showOnLoad",
         "type": "boolean",
-        "widget": "none",
-        "label": "Dummy"
+        "label": "Show transcript on load",
+        "description": "You can select whether the transcript should be shown when the content is loaded or not.",
+        "default": true,
+        "optional": true
       }
     ]
   },
