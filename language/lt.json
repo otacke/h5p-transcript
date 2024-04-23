@@ -16,7 +16,7 @@
       "entity": "įrašo failas",
       "widgets": [
         {
-          "label": "Pradinis"
+          "label": "Numatytasis"
         }
       ],
       "field": {
@@ -53,11 +53,11 @@
       "label": "Skyriai",
       "fields": [
         {
-          "label": "Naudokite interaktyvaus video žymas"
+          "label": "Naudoti interaktyvaus video žymas"
         },
         {
-          "label": "Skyrių žymos",
-          "description": "Galite pasirinktinai pridėti skyrių žymes įprastu mp4chaps formatu. Sintaksė yra „hh:mm:ss Skyriaus pavadinimas“ arba „hh:mm:ss.MMM Skyriaus pavadinimas“"
+          "label": "Skyriaus žymos",
+          "description": "Galite pasirinktinai pridėti skyriaus žymas įprastu mp4chaps formatu. Sintaksė yra „hh:mm:ss Skyriaus pavadinimas“ arba „hh:mm:ss.MMM Skyriaus pavadinimas“"
         }
       ]
     },
@@ -66,32 +66,32 @@
       "fields": [
         {
           "label": "Laikmena nepateikta",
-          "default": "Laikmena nepriskirta įrašui"
+          "default": "Laikmena nepriskirta įrašui."
         },
         {
           "label": "Nepateiktas įrašas",
-          "default": "Nepateiktas įrašas"
+          "default": "Nepateiktas įrašas."
         },
         {
           "label": "Problema su WebVTT failu",
           "default": "Atrodo, kad kažkas negerai su WebVTT failu. Daugiau informacijos rasite naršyklės kūrimo konsolėje."
         },
         {
-          "label": "Skyriaus žyma",
-          "default": "Skyrių žymos"
+          "label": "Skyriaus žymos",
+          "default": "Skyriaus žymos"
         },
         {
-          "label": "Neįvardintos fukcijos",
-          "default": "Nepavadintos fukcijos"
+          "label": "Neįvardinta parinktis",
+          "default": "Neįvardinta parinktis"
         }
       ]
     },
     {
-      "label": "Skaitovas",
+      "label": "Skaitytuvas",
       "fields": [
         {
           "label": "Įrašas matomas",
-          "default": "Paslėpti įrašą. Dabar matomas"
+          "default": "Slėpti įrašą. Dabar matomas."
         },
         {
           "label": "Įrašas nematomas",
@@ -99,15 +99,15 @@
         },
         {
           "label": "Autoslinkimas įjungtas",
-          "default": "Išjungtiautoslinkimą. Dabar įjungtas."
+          "default": "Išjungti autoslinkimą. Dabar įjungtas."
         },
         {
           "label": "Autoslinkimas neįjungtas",
-          "default": "Įjungti autoslinkimą. Dabar neįjungtas"
+          "default": "Įjungti autoslinkimą. Dabar išjungtas."
         },
         {
-          "label": "Autoslinkimas uždraustas.",
-          "default": "Autoslinkimo fukcija išjungta."
+          "label": "Autoslinkimas išjungtas",
+          "default": "Autoslinkimo parinktis išjungta."
         },
         {
           "label": "Interaktyvi įrašo peržiūra",
@@ -126,12 +126,12 @@
           "default": "Slėpti pradžios laiką. Dabar rodomas."
         },
         {
-          "label": "Pradžios laikas neįjungtas",
+          "label": "Pradžios laikas neaktyvus",
           "default": "Rodyti pradžio laiką. Dabar nerodomas."
         },
         {
           "label": "Pradžios laikas išjungtas",
-          "default": "Pradžios laiko fukcija išjungta."
+          "default": "Pradžios laiko parinktis išjungta."
         },
         {
           "label": "Line breaks active",
@@ -178,8 +178,8 @@
           "default": "Search box disabled."
         },
         {
-          "label": "Close",
-          "default": "Close"
+          "label": "Uždaryti",
+          "default": "Uždaryti"
         }
       ]
     }
