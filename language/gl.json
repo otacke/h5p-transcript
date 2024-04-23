@@ -45,7 +45,7 @@
         },
         {
           "label": "Show transcript on load",
-          "description": "You can select whether the transcript should be shown when the content is loaded or not."
+          "description": "Podes seleccionar se a transcrición debe mostrarse cando se carga o contido ou non."
         }
       ]
     },
