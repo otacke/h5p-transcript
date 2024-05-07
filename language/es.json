@@ -44,7 +44,7 @@
           "description": "Número máximo de líneas de transcripción mostradas a la vez. Si no se configura o su valor es 0, se mostrará la transcripción completa."
         },
         {
-          "label": "Show transcript on load",
+          "label": "Mostrar transcripción al cargar",
           "description": "Puede seleccionar si la transcripción debe mostrarse cuando se carga el contenido o no."
         }
       ]
