@@ -44,7 +44,7 @@
           "description": "Número máximo de liñas de transcrición que deben amosarse á vez. Se se omite ou ten valor 0, amosará a transcrición completa."
         },
         {
-          "label": "Show transcript on load",
+          "label": "Mostrar a transcrición ao cargar",
           "description": "Podes seleccionar se a transcrición debe mostrarse cando se carga o contido ou non."
         }
       ]
