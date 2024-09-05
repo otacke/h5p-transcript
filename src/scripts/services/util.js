@@ -79,19 +79,28 @@ export default class Util {
       return;
     }
 
+    // eslint-disable-next-line no-magic-numbers
     const ms = Math.round(1000 * (seconds - Math.floor(seconds)));
     seconds = Math.floor(seconds);
 
+    // eslint-disable-next-line no-magic-numbers
     const hours = Math.floor(seconds / 3600);
+    // eslint-disable-next-line no-magic-numbers
     seconds -= hours * 3600;
 
+    // eslint-disable-next-line no-magic-numbers
     const minutes = Math.floor(seconds / 60);
+    // eslint-disable-next-line no-magic-numbers
     seconds -= minutes * 60;
 
     let timecode = '';
+    // eslint-disable-next-line no-magic-numbers
     timecode += hours.toString().padStart(2, '0');
+    // eslint-disable-next-line no-magic-numbers
     timecode += `:${minutes.toString().padStart(2, '0')}`;
+    // eslint-disable-next-line no-magic-numbers
     timecode += `:${seconds.toString().padStart(2, '0')}`;
+    // eslint-disable-next-line no-magic-numbers
     timecode += `.${ms.toString().padStart(3, '0')}`;
 
     return timecode;

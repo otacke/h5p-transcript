@@ -24,6 +24,7 @@ export default class Transcript extends H5P.EventDispatcher {
       l10n: {
         noMedium: 'No medium was assigned to the transcript.',
         noTranscript: 'No transcript was provided.',
+        // eslint-disable-next-line max-len
         troubleWebVTT: 'There seems to be something wrong with the WebVTT file. Please consult the browser\'s development console for more information.',
         chapterMarks: 'Chapter marks',
         unnamedOption: 'Unnamed option'
