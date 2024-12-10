@@ -103,83 +103,83 @@
         },
         {
           "label": "自动滚动不活跃",
-          "default": "Turn on autoscroll. Currently not active."
+          "default": "打开自动滚动。当前未激活。"
         },
         {
-          "label": "Autoscroll disabled",
-          "default": "Autoscroll option disabled."
+          "label": "禁用自动滚动",
+          "default": "自动滚动选项已禁用。"
         },
         {
-          "label": "Interactive transcript view",
-          "default": "Switch to plaintext view"
+          "label": "交互文本视图",
+          "default": "切换到明文视图"
         },
         {
-          "label": "Plain text view",
-          "default": "Switch to interactive transcript view."
+          "label": "纯文本视图",
+          "default": "切换到交互文本视图。"
         },
         {
-          "label": "Mode switching disabled",
-          "default": "Mode switching disabled."
+          "label": "模式切换禁用",
+          "default": "模式切换被禁用。"
         },
         {
-          "label": "Start time active",
-          "default": "Hide start time. Currently shown."
+          "label": "开始时间有效",
+          "default": "隐藏开始时间。目前显示。"
         },
         {
-          "label": "Start time inactive",
-          "default": "Show start time. Currently not shown."
+          "label": "开始时间未激活",
+          "default": "显示开始时间。目前未显示。"
         },
         {
-          "label": "Start time disabled",
-          "default": "Start time option disabled."
+          "label": "禁用开始时间",
+          "default": "开始时间选项被禁用。"
         },
         {
-          "label": "Line breaks active",
-          "default": "Hide line breaks. Currently shown."
+          "label": "换行符已激活",
+          "default": "隐藏换行符。目前显示。"
         },
         {
-          "label": "Line breaks inactive",
-          "default": "Show line breaks. Currently not shown."
+          "label": "换行符未激活",
+          "default": "显示换行。目前未显示。"
         },
         {
-          "label": "Line breaks disabled",
-          "default": "Line break option disabled."
+          "label": "禁用换行",
+          "default": "已禁用换行选项。"
         },
         {
-          "label": "Open chapter marks",
-          "default": "Open chapter marks"
+          "label": "打开章节标记",
+          "default": "打开章节标记"
         },
         {
-          "label": "Close chapter marks",
-          "default": "Close chapter marks"
+          "label": "关闭章节标记",
+          "default": "关闭章节标记"
         },
         {
-          "label": "Chapter marks disabled",
-          "default": "Chapter marks disabled."
+          "label": "章标禁用",
+          "default": "章标禁用。"
         },
         {
-          "label": "Interactive transcript",
-          "default": "Interactive transcript"
+          "label": "互动文稿",
+          "default": "互动文稿"
         },
         {
-          "label": "Enter to highlight",
-          "default": "Enter a query to highlight relevant text."
+          "label": "输入以高亮显示",
+          "default": "输入查询以突出显示相关文本。"
         },
         {
-          "label": "Select field disabled",
-          "default": "Select field disabled."
+          "label": "选择禁用字段",
+          "default": "选择禁用字段。"
         },
         {
-          "label": "Enter to highlight",
-          "default": "Enter a query to highlight relevant text."
+          "label": "输入以高亮显示",
+          "default": "输入查询以突出显示相关文本。"
         },
         {
-          "label": "Search box disabled",
-          "default": "Search box disabled."
+          "label": "禁用搜索框",
+          "default": "禁用搜索框。"
         },
         {
-          "label": "Close",
-          "default": "Close"
+          "label": "关闭",
+          "default": "关闭"
         }
       ]
     }
