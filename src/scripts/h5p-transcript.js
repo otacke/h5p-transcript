@@ -19,15 +19,15 @@ export default class Transcript extends H5P.EventDispatcher {
       chapters: {},
       behaviour: {
         maxLines: 10,
-        showOnLoad: true
+        showOnLoad: true,
       },
       l10n: {
         noMedium: 'No medium was assigned to the transcript.',
         noTranscript: 'No transcript was provided.',
-        // eslint-disable-next-line max-len
+        // eslint-disable-next-line @stylistic/js/max-len
         troubleWebVTT: 'There seems to be something wrong with the WebVTT file. Please consult the browser\'s development console for more information.',
         chapterMarks: 'Chapter marks',
-        unnamedOption: 'Unnamed option'
+        unnamedOption: 'Unnamed option',
       },
       a11y: {
         buttonVisible: 'Hide transcript. Currently visible.',
@@ -48,16 +48,16 @@ export default class Transcript extends H5P.EventDispatcher {
         selectField: 'Select what transcript to display.',
         selectFieldDisabled: 'Select field disabled.',
         enterToHighlight: 'Enter a query to highlight relevant text.',
-        searchboxDisabled: 'Search box disabled.'
-      }
+        searchboxDisabled: 'Search box disabled.',
+      },
     }, params);
 
     // Sanitize transcript files
     if (!this.params.transcriptFiles.length) {
       this.params.transcriptFiles.push(
         {
-          transcriptFile: {}
-        }
+          transcriptFile: {},
+        },
       );
     }
 
@@ -82,7 +82,7 @@ export default class Transcript extends H5P.EventDispatcher {
 
     this.medium = this.buildMedium({
       medium: this.params.mediumGroup.medium,
-      previousState: this.previousState.medium
+      previousState: this.previousState.medium,
     });
 
     // Turn IV bookmarks into chapter marks
@@ -109,13 +109,13 @@ export default class Transcript extends H5P.EventDispatcher {
           chapterMarks: this.params.chapters.chapterMarks,
           behaviour: {
             maxLines: this.params.behaviour.maxLines,
-            buttons: ['visibility', 'plaintext', 'linebreak', 'autoscroll']
+            buttons: ['visibility', 'plaintext', 'linebreak', 'autoscroll'],
           },
           l10n: this.params.l10n,
-          a11y: this.params.a11y
-        }
+          a11y: this.params.a11y,
+        },
       },
-      previousState: this.previousState.transcript
+      previousState: this.previousState.transcript,
     });
 
     // Expect parent to set activity started when parent is shown
@@ -181,7 +181,7 @@ export default class Transcript extends H5P.EventDispatcher {
         this.contentId,
         H5P.jQuery(dom),
         false,
-        { previousState: params.previousState }
+        { previousState: params.previousState },
       );
 
     if (instance) {
@@ -200,7 +200,7 @@ export default class Transcript extends H5P.EventDispatcher {
           if (!controlslist.includes('nofullscreen')) {
             videoElement.setAttribute(
               'controlslist',
-              `${controlslist} nofullscreen`
+              `${controlslist} nofullscreen`,
             );
           }
         }
@@ -229,7 +229,7 @@ export default class Transcript extends H5P.EventDispatcher {
 
     return {
       dom: dom,
-      instance: instance
+      instance: instance,
     };
   }
 
@@ -249,7 +249,7 @@ export default class Transcript extends H5P.EventDispatcher {
         this.contentId,
         H5P.jQuery(dom),
         false,
-        { previousState: params.previousState }
+        { previousState: params.previousState },
       );
 
     if (instance) {
@@ -260,7 +260,7 @@ export default class Transcript extends H5P.EventDispatcher {
 
     return {
       dom: dom,
-      instance: instance
+      instance: instance,
     };
   }
 
@@ -445,12 +445,12 @@ export default class Transcript extends H5P.EventDispatcher {
       this.getMaxScore(),
       this,
       true,
-      this.getScore() === this.getMaxScore()
+      this.getScore() === this.getMaxScore(),
     );
 
     return {
       statement: xAPIEvent.data.statement,
-      children: this.getXAPIDataFromMedium()
+      children: this.getXAPIDataFromMedium(),
     };
   }
 
@@ -490,7 +490,7 @@ export default class Transcript extends H5P.EventDispatcher {
     definition.name['en-US'] = definition.name[this.languageTag];
     definition.description = {};
     definition.description[this.languageTag] = Util.stripHTML(
-      this.getDescription()
+      this.getDescription(),
     );
     // Fallback for h5p-php-reporting, expects en-US
     definition.description['en-US'] = definition.description[this.languageTag];
@@ -507,7 +507,7 @@ export default class Transcript extends H5P.EventDispatcher {
   getTitle() {
     // H5P Core function: createTitle
     return H5P.createTitle(
-      this.extras?.metadata?.title || Transcript.DEFAULT_DESCRIPTION
+      this.extras?.metadata?.title || Transcript.DEFAULT_DESCRIPTION,
     );
   }
 
